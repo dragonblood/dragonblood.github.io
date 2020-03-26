@@ -7,7 +7,7 @@ body {
   color: #ffffff;
   background: #feac5e; /* fallback for old browsers */
   background: linear-gradient(
-    to right,
+    0deg,
     #4bc0c8,
     #c779d0,
     #feac5e
@@ -17,42 +17,37 @@ body {
 h1 {
   font-size: 4.5em;
   font-weight: 500;
-  margin-bottom: 0;
 }
-p {
-  font-size: 1.6em;
-  font-weight: 300;
-  line-height: 1.4;
-  max-width: 26em;
-  padding: 50vh 10vw;
-}
+#About,
 ul {
-  font-size: 1.6em;
+  font-size: 2.2em;
   font-weight: 300;
   line-height: 1.4;
   max-width: 26em;
-  padding: 50vh 10vw;
+  padding: 44vh 20vw;
+}
+#Contact {
+  font-weight: 300;
+  line-height: 1.4;
+  font-size: 1.5em;
+  max-width: 26em;
+  padding: 40vh 10vw;
 }
 #b {
-  text-decoration: none;
   color: #ffffff;
-  position: relative;
+  text-decoration: none;
 }
-#b:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 60%;
-  left: -0.1em;
-  right: -0.1em;
-  bottom: 0;
-  transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
-  background-color: rgb(0, 0, 0);
+#b:hover {
+  font-size: 1.9em;
+  font-weight: 350;
+  line-height: 1.8;
+  max-width: 26em;
+  transition: 0.5s;
 }
-#b:hover:after {
-  top: 0%;
+a {
+  color: #ffffff;
+  text-decoration: none;
 }
-
 @font-face {
   font-family: "Rubik";
   font-style: normal;
@@ -67,26 +62,27 @@ ul {
   overflow: hidden;
   position: fixed;
   bottom: 0;
-  left: 27%;
-  right: 27%;
-  padding: 40px;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding: 20px;
 }
 
 /* Style the links inside the navigation bar */
 .navbar a {
-  float: center;
   color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 30px;
   text-decoration: none;
   font-size: 17px;
 }
 
 /* Change the color of links on hover */
-.navbar a:focus {
-  background-color: rgba(221, 221, 221, 0.562);
+.navbar a:hover {
+  background-color: inherit;
   color: black;
   font-size: 24px;
+  padding: 35px;
   transition: 0.3s;
 }
 
