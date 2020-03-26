@@ -4,7 +4,7 @@ body {
     sans-serif;
   font-size: calc(10px + 0.33vw);
   -webkit-font-smoothing: antialiased;
-  color: #121314;
+  color: #ffffff;
   background: #feac5e; /* fallback for old browsers */
   background: linear-gradient(
     to right,
@@ -33,12 +33,12 @@ ul {
   max-width: 26em;
   padding: 50vh 10vw;
 }
-/* a {
+#b {
   text-decoration: none;
-  color: #121314;
+  color: #ffffff;
   position: relative;
 }
-a:after {
+#b:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -47,11 +47,11 @@ a:after {
   right: -0.1em;
   bottom: 0;
   transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
-  background-color: rgba(79, 192, 141, 0.5);
+  background-color: rgb(0, 0, 0);
 }
-a:hover:after {
+#b:hover:after {
   top: 0%;
-} */
+}
 
 @font-face {
   font-family: "Rubik";
