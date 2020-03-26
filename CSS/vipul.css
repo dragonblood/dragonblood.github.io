@@ -69,7 +69,7 @@ a:hover:after {
   bottom: 0;
   left: 27%;
   right: 27%;
-  padding: 14px;
+  padding: 40px;
 }
 
 /* Style the links inside the navigation bar */
@@ -83,7 +83,7 @@ a:hover:after {
 }
 
 /* Change the color of links on hover */
-.navbar a:hover {
+.navbar a:focus {
   background-color: rgba(221, 221, 221, 0.562);
   color: black;
   font-size: 24px;
