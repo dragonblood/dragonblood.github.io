@@ -4,13 +4,13 @@ body {
     sans-serif;
   font-size: calc(10px + 0.33vw);
   -webkit-font-smoothing: antialiased;
-  padding: 50vh 10vw;
   color: #121314;
-  background: #b2fefa; /* fallback for old browsers */
+  background: #feac5e; /* fallback for old browsers */
   background: linear-gradient(
     to right,
-    #0ed2f7,
-    #b2fefa
+    #4bc0c8,
+    #c779d0,
+    #feac5e
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -24,8 +24,16 @@ p {
   font-weight: 300;
   line-height: 1.4;
   max-width: 26em;
+  padding: 50vh 10vw;
 }
-a {
+ul {
+  font-size: 1.6em;
+  font-weight: 300;
+  line-height: 1.4;
+  max-width: 26em;
+  padding: 50vh 10vw;
+}
+/* a {
   text-decoration: none;
   color: #121314;
   position: relative;
@@ -43,13 +51,46 @@ a:after {
 }
 a:hover:after {
   top: 0%;
-}
+} */
 
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 300;
-  src: local("Rubik Light"), local("Rubik-Light"),
+  src: local("Rubik Light"),
     url(https://fonts.gstatic.com/s/rubik/v9/iJWHBXyIfDnIV7Fqj2md8WA.woff2)
       format("woff2");
+}
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 27%;
+  right: 27%;
+  padding: 14px;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: rgba(221, 221, 221, 0.562);
+  color: black;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+/* Add a color to the active/current link */
+.navbar a:active {
+  color: rgb(0, 0, 0);
 }
