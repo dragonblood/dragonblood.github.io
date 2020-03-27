@@ -14,48 +14,47 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-h1 {
-  font-size: 4.5em;
-  font-weight: 500;
+h1,
+b {
+  font-size: 3.5em;
+  font-weight: 400;
 }
+
 #About,
 ul {
   font-size: 2.2em;
   font-weight: 300;
   line-height: 1.4;
   max-width: 26em;
-  padding: 44vh 20vw;
+  padding: 40vh 20vw;
+}
+code {
+  font-size: 0.8em;
+  font-weight: 300;
+  line-height: 1.4;
+  max-width: 26em;
 }
 #Contact {
   font-weight: 300;
   line-height: 1.4;
   font-size: 1.5em;
   max-width: 26em;
-  padding: 40vh 10vw;
+  padding: 39vh 10vw;
 }
-#b {
-  color: #ffffff;
-  text-decoration: none;
-}
+
 #b:hover {
   font-size: 1.9em;
   font-weight: 350;
   line-height: 1.8;
   max-width: 26em;
   transition: 0.5s;
+  color: #7c7c7c;
 }
 a {
   color: #ffffff;
   text-decoration: none;
 }
-@font-face {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 300;
-  src: local("Rubik Light"),
-    url(https://fonts.gstatic.com/s/rubik/v9/iJWHBXyIfDnIV7Fqj2md8WA.woff2)
-      format("woff2");
-}
+
 /* Place the navbar at the bottom of the page, and make it stick */
 .navbar {
   background-color: rgba(255, 255, 255, 0.5);
@@ -73,7 +72,6 @@ a {
 .navbar a {
   color: #f2f2f2;
   padding: 30px;
-  text-decoration: none;
   font-size: 17px;
 }
 
@@ -83,10 +81,10 @@ a {
   color: black;
   font-size: 24px;
   padding: 35px;
-  transition: 0.3s;
+  transition: 0.45s;
 }
 
 /* Add a color to the active/current link */
 .navbar a:active {
-  color: rgb(0, 0, 0);
+  color: #000;
 }
