@@ -1,90 +1,77 @@
 body {
-  font-family: "Rubik", sans-serif, "Rubik", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  font-size: calc(10px + 0.33vw);
-  -webkit-font-smoothing: antialiased;
-  color: #ffffff;
-  background: #feac5e; /* fallback for old browsers */
-  background: linear-gradient(
-    0deg,
-    #4bc0c8,
-    #c779d0,
-    #feac5e
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: "Rubik", sans-serif, "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: calc(10px + 0.33vw);
+    -webkit-font-smoothing: antialiased;
+    color: #ffffff;
+    background: #feac5e;
+    background: linear-gradient( 0deg, #4bc0c8, #c779d0, #feac5e);
+}
+
+#About,
+#Projects,
+#Contact,
+code {
+    font-weight: 300;
+    line-height: 1.4;
+    max-width: 26em;
+    font-size: 2.2em;
+    padding: 40vh 20vw;
+}
+
+#Contact {
+    font-size: 1.5em;
+    padding: 30vh 10vw;
+}
+
+code {
+    font-size: 0.8em;
+    padding: 0vh 0vw;
 }
 
 h1,
 b {
-  font-size: 3.5em;
-  font-weight: 400;
+    font-size: 3.5em;
+    font-weight: 400;
 }
 
-#About,
-ul {
-  font-size: 2.2em;
-  font-weight: 300;
-  line-height: 1.4;
-  max-width: 26em;
-  padding: 40vh 20vw;
-}
-code {
-  font-size: 0.8em;
-  font-weight: 300;
-  line-height: 1.4;
-  max-width: 26em;
-}
-#Contact {
-  font-weight: 300;
-  line-height: 1.4;
-  font-size: 1.5em;
-  max-width: 26em;
-  padding: 39vh 10vw;
-}
-
-#b:hover {
-  font-size: 1.9em;
-  font-weight: 350;
-  line-height: 1.8;
-  max-width: 26em;
-  transition: 0.5s;
-  color: #7c7c7c;
-}
 a {
-  color: #ffffff;
-  text-decoration: none;
+    color: #ffff;
+    text-decoration: none;
 }
 
-/* Place the navbar at the bottom of the page, and make it stick */
-.navbar {
-  background-color: rgba(255, 255, 255, 0.5);
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  padding: 20px;
+.ul a:hover {
+    background-color: transparent;
+    transition: 1.5s;
+    font-size: 60px;
 }
 
-/* Style the links inside the navigation bar */
-.navbar a {
-  color: #f2f2f2;
-  padding: 30px;
-  font-size: 17px;
+#navbar {
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
 }
 
-/* Change the color of links on hover */
-.navbar a:hover {
-  background-color: inherit;
-  color: black;
-  font-size: 24px;
-  padding: 35px;
-  transition: 0.45s;
+#navbar a {
+    padding: 25px;
+    font-size: 20px;
 }
 
-/* Add a color to the active/current link */
-.navbar a:active {
-  color: #000;
+#navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    font-size: 27px;
+    padding: 35px;
+    transition: 0.5s;
+}
+
+#navbar a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
 }
