@@ -4,7 +4,7 @@ body {
     -webkit-font-smoothing: antialiased;
     color: #ffffff;
     background: #feac5e;
-    background: linear-gradient( 0deg, #4bc0c8, #c779d0, #feac5e);
+    background: linear-gradient(0deg, #4bc0c8, #c779d0, #feac5e);
 }
 
 #About,
@@ -15,7 +15,7 @@ code {
     line-height: 1.4;
     max-width: 26em;
     font-size: 2.2em;
-    padding: 40vh 20vw;
+    padding: 40vh 18vw;
 }
 
 #Contact {
@@ -39,15 +39,33 @@ a {
     text-decoration: none;
 }
 
-.ul a:hover {
-    background-color: transparent;
-    transition: 1.5s;
-    font-size: 60px;
+.t:hover {
+    transform: translate(30px, 0px);
+    transition: 1s;
+}
+
+.ul li ul.sidemenu {
+    display: none;
+    position: absolute;
+    transform: translate(350px, -80px);
+    transition: 1s;
+    background-color: #29292971;
+    padding-left: 20%;
+    padding: 5%;
+    padding-right: 20%;
+}
+
+.ul li:hover ul.sidemenu {
+    display: block;
+    /* Display the dropdown */
+}
+
+.ul li ul.sidemenu li {
+    display: block;
 }
 
 #navbar {
     background-color: rgba(255, 255, 255, 0.5);
-    overflow: hidden;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -65,13 +83,6 @@ a {
 #navbar a:hover {
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
-    font-size: 27px;
     padding: 35px;
     transition: 0.5s;
-}
-
-#navbar a:active {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
 }
