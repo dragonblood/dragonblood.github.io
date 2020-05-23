@@ -26,7 +26,7 @@ body {
 .lt-Intro {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1.1fr 0.9fr;
+    grid-template-rows: 1fr 1fr;
     gap: 1px 1px;
     grid-area: 1 / 2 / 2 / 3;
 }
@@ -90,8 +90,7 @@ body {
 #About,
 #Projects,
 #Contact,
-code,
-h1 {
+code {
     font-weight: 300;
     line-height: 1.4;
     max-width: 26em;
@@ -103,6 +102,9 @@ h1 {
 }
 
 h1 {
+    font-weight: 300;
+    line-height: 1.4;
+    max-width: 26em;
     font-size: 1em;
 }
 
