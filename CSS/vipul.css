@@ -4,7 +4,6 @@
 
 body {
     font-family: "Rubik", sans-serif, "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: calc(10px + 0.33vw);
     -webkit-font-smoothing: antialiased;
     color: #ffffff;
     background: #feac5e;
@@ -94,26 +93,26 @@ code {
     font-weight: 300;
     line-height: 1.4;
     max-width: 26em;
-    font-size: 2.2em;
+    font-size: calc(15px + 0.8vw);
 }
 
 #Contact {
-    font-size: 1.5em;
+    font-size: calc(10px + 1.2vw);
 }
 
 h1 {
     font-weight: 300;
     line-height: 1.4;
     max-width: 26em;
-    font-size: 1em;
+    font-size: calc(15px + 0.8vw);
 }
 
 b {
-    font-size: 3.5em;
+    font-size: calc(50px + 5vw);
 }
 
 code {
-    font-size: 0.5em;
+    font-size: calc(10px + 1vw);
 }
 
 .t:hover {
@@ -143,7 +142,7 @@ a {
 }
 
 #navbar {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
     position: fixed;
     overflow: hidden;
     bottom: 0;
@@ -156,13 +155,13 @@ a {
 
 #navbar a {
     padding: 25px;
-    font-size: 20px;
+    font-size: calc(10px + 0.5vw);
 }
 
 #navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.4);
     color: black;
-    font-size: 27px;
+    font-size: calc(13px + 0.5vw);
     padding: 35px;
     transition: 0.5s;
 }
