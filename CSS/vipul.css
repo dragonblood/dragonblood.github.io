@@ -5,9 +5,10 @@
 body {
     font-family: "Rubik", sans-serif, "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
-    color: #ffffff;
-    background: #feac5e;
-    background: linear-gradient(0deg, #4bc0c8, #c779d0, #feac5e);
+    color: #000000;
+    /* background: #feac5e; */
+    background: black;
+    /* linear-gradient(0deg, #4bc0c8, #c779d0, #feac5e); */
     background-repeat: no-repeat;
 }
 
@@ -16,6 +17,8 @@ body {
     grid-template-columns: 0.2fr 1.8fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1px 1px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #e1e1b8, #bdbd9b);
 }
 
 .lt-Left-padded-area {
@@ -137,31 +140,39 @@ code {
 }
 
 a {
-    color: #ffff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
 #navbar {
-    background-color: rgba(255, 255, 255, 0.6);
+    /* background-color: rgba(255, 255, 255, 0.6); */
+
+
+    border-radius: calc(10px + 0.5vw);
+background: #d2d2ac;
+box-shadow:  -7px 7px 13px #a8a88a, 
+             7px -7px 13px #fcfcce;
+
+
     position: fixed;
-    overflow: hidden;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: 2.5%;
+    left: 4%;
+    right: 45%;
+    /* width: 100%; */
     justify-content: center;
     display: flex;
-    padding: 20px;
+    padding: 2%;
 }
 
 #navbar a {
-    padding: 25px;
+    padding: 3%;
     font-size: calc(10px + 0.5vw);
 }
 
 #navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    color: black;
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    color: white;
     font-size: calc(13px + 0.5vw);
-    padding: 35px;
-    transition: 0.5s;
+    padding: 5%;
+    transition: 0.9s;
 }
