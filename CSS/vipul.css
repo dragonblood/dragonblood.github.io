@@ -113,8 +113,7 @@ a{
 
 #About,
 #Projects,
-#Contact,
-code {
+#Contact {
     font-weight: 300;
     line-height: 1.4;
     max-width: 26em;
@@ -134,10 +133,6 @@ h1 {
 
 b {
     font-size: calc(50px + 5vw);
-}
-
-code {
-    font-size: calc(10px + 1vw);
 }
 
 .t:hover {
