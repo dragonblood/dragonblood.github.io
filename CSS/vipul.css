@@ -1,15 +1,38 @@
-* {
-    scroll-behavior: smooth;
+@import url('scss-main.css');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+:root {
+    --border-size: 0.125rem;
+    --duration: 250ms;
+    --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+    --color-primary: white;
+    --color-secondary: black;
+    --color-tertiary: dodgerblue;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --space: 1rem;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: #e0e0e0;
+    font-family: 'Amatic SC', cursive;
+
+    /* height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    padding: calc(var(--space) * 2);
+    max-width: 700px; */
 }
 
-body {
-    font-family: "Rubik", sans-serif, "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    color: #000000;
-    /* background: #feac5e; */
-    background: black;
-    /* linear-gradient(0deg, #4bc0c8, #c779d0, #feac5e); */
-    background-repeat: no-repeat;
+a{
+    color: #000;
+}
+* {
+    scroll-behavior: smooth;
 }
 
 .lt-grid-container {
@@ -18,7 +41,6 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1px 1px;
     border-radius: 10px;
-    background: linear-gradient(145deg, #e1e1b8, #bdbd9b);
 }
 
 .lt-Left-padded-area {
@@ -122,14 +144,14 @@ code {
     transform: translate(30px, 0px);
     transition: 1.5s;
 }
-
+/* 
 .lt-Project-detail {
     visibility: hidden;
     transform: translate(0px, 0px);
     transition: 1s;
     background-color: #29292971;
     padding: 5%;
-}
+} */
 
 .ul li:hover ul.sidemenu {
     display: block;
@@ -139,42 +161,62 @@ code {
     display: block;
 }
 
-a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-
-#navbar {
-    /* background-color: rgba(255, 255, 255, 0.6); */
-
-
-    border-radius: calc(10px + 0.5vw);
-background: #d2d2ac;
-box-shadow:  -7px 7px 13px #a8a88a, 
-             7px -7px 13px #fcfcce;
-
-
-    position: fixed;
-    bottom: 2.5%;
-    left: 4%;
-    right: 20%;
-    /* width: 100%; */
-    justify-content: center;
+.multi-button {
     display: flex;
-    padding: 1%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-}
-
-#navbar a {
-    padding: 3%;
-    font-size: calc(10px + 0.5vw);
-}
-
-#navbar a:hover {
-    /* background-color: rgba(255, 255, 255, 0.4); */
+    width: 100%;
+    box-shadow: var(--shadow) 4px 4px;
+    }
+    
+    .multi-button button {
+    flex-grow: 1;
+    cursor: pointer;
+    position: relative;
+    padding:
+        calc(var(--space) / 1.125)
+        var(--space)
+        var(--space);
+    border: var(--border-size) solid black;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    font-size: 1.5rem;
+    font-family: var(--font-family);
+    text-transform: lowercase;
+    text-shadow: var(--shadow) 2px 2px;
+    transition: flex-grow var(--duration) var(--ease);
+    }
+    
+    .multi-button button + button {
+    border-left: var(--border-size) solid black;
+    margin-left: calc(var(--border-size) * -1);
+    }
+    
+    .multi-button button:hover,
+    .multi-button button:focus {
+    flex-grow: 2;
     color: white;
-    font-size: calc(13px + 0.5vw);
-    padding: 0.5%;
-    transition: 0.9s;
-}
+    outline: none;
+    text-shadow: none;
+    background-color: var(--color-secondary);
+    }
+    
+    .multi-button button:focus {
+    outline: var(--border-size) dashed var(--color-primary);
+    outline-offset: calc(var(--border-size) * -3);
+    }
+    
+    .multi-button:hover button:focus:not(:hover) {
+    flex-grow: 1;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    outline-color: var(--color-tertiary);
+    }
+    
+    .multi-button button:active {
+    transform: translateY(var(--border-size));
+    }
+
+    .fix{
+        position:fixed;
+        top: 0; 
+        right: 0;
+    }
