@@ -1,82 +1,347 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vipul petkar</title>
-  <meta property="og:type" content="website">
-  <meta name="description" content="Vipul Petkar Personal Website Portfolio ">
-
-  <link rel="icon" type="image/png" sizes="504x504" href="assets/img/logo.png">
-
+  <meta charset="UTF-8">
+  <title>CodePen - Parallex Effect SPA </title>
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="assets/css/first-page.css">
-  <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 <body>
-  <!-- partial:index.partial.html -->
+<!-- partial:index.partial.html -->
+<html>
+<head>
+	<title>Parallex Effect SPA</title>
+	<!-- meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/first-page.css">
 
-  <header style="background: #ffce6d; padding-left: 5px; height: 100%;" >
-    <div class="container-fluid ">
-      <div id='stars'></div>
-      <div id='stars2'></div>
-      <div id='stars3'></div>
-      <div class="row">
-        <div class="col-md-6">
-            <!-- <img src="assets/img/Untitled%20drawing(1).svg" style="margin-top: 10px;"> -->
-        </div>
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-4">
-            <img class="vipul" src="assets/img/Untitled%20drawing(2).svg">
-        </div>
-        <div class="col-md-1">
-            <div class="social"></div>
-            <div class="scroll-down"></div>
-        </div>
-      </div>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-  </header>
-</div>
+</head>
+<body>
 
-  <section id="portfolio-1" style="background: #c4ff00; height: 100%;">
-    <img src="assets/img/Untitled%20drawing-1.svg" style="height: 25%; transform: rotate(-30deg); margin-top: -30px;">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-2">
-          <img src="assets/img/Untitled%20drawing(4).svg">
-        </div>
-        <div class="col-md-9">
-        </div>
-      </div>
+	<section id="about">
+		<div class="container-fluid ">
+			<div id='stars'></div>
+			<div id='stars2'></div>
+			<div id='stars3'></div>
+		</div>
+			<header>
+				<!-- <div id="logo">
+					<img src="http://res.cloudinary.com/dywawuwi4/image/upload/v1505339974/stamp_l4ck8b.png" width="60px">
+				</div> -->
+				<nav>
+					<!-- nav list -->
+					<ul>
+						<li id="aboutLink"><a class="links" href="#about">Intro</a></li>
+						<li id="commLink"><a class="links" href="#community">About Me</a></li>
+						<li id="menuLink"><a class="links" href="#achivements">Achivements</a></li>
+						<li id="recipeLink"><a class="links" href="#recipe">Projects</a></li>
+						<li id="contactLink"><a class="links" href="#contact-login">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div id="heading-container">
+				<h1 id="heading2">Hi</h1>
+				<h1 id="heading1">I'm Vipul</h1>
+				<!-- <h2 id="heading3">Vipul</h2> -->
+			</div>
+		
+		<img id="vipul" src="img/vipul.svg">
+	</section>
+	<!-- <button type="button" id="info">REQUEST INFO</button> -->
+	<div id="countContainer">
+		<span id="count">01</span>
+		<div class="pageCountShow active" id="viewport1"></div>
+		<div class="pageCountShow" id="viewport2"></div>
+		<div class="pageCountShow" id="viewport3"></div>
+		<div class="pageCountShow" id="viewport4"></div>
+		<div class="pageCountShow" id="viewport5"></div>
+		<div class="pageCountShow" id="viewport6"></div>
+	</div>
+	<section id="community">
+		<div id="intro">
+			<!-- <h1>MEET OUR COMMUNITY</h1> -->
+			<button type="input" class="know-more">KNOW MORE</button>
+			<img src="img/About_me.png">
+			<!-- <div class="through-line"></div> -->
+			<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p> -->
+		</div>
+		<!-- <div class="media" id="media-tweet">
+			<img class="tweeter-icon" src="http://res.cloudinary.com/dywawuwi4/image/upload/v1505339937/twitter-icon_fmabl7.png">
+			<div class="media-img">
+				<blockquote class="twitter-tweet" data-lang="en-gb"><p lang="en" dir="ltr">Our editor-in-chief <a href="https://twitter.com/rapo4">@rapo4</a> on his healthy dinner blueprint. <a href="https://t.co/15wHJNQ8GG">https://t.co/15wHJNQ8GG</a> <a href="https://t.co/SbkLCnmN0p">pic.twitter.com/SbkLCnmN0p</a></p>&mdash; Healthyish (@healthy_ish) <a href="https://twitter.com/healthy_ish/status/903342397370847232">31 August 2017</a></blockquote>
+			</div>
+			<div class="media-post">
+				<blockquote class="twitter-tweet" data-cards="hidden" data-lang="en-gb"><p lang="en" dir="ltr">Our editor-in-chief <a href="https://twitter.com/rapo4">@rapo4</a> on his healthy dinner blueprint. <a href="https://t.co/15wHJNQ8GG">https://t.co/15wHJNQ8GG</a> <a href="https://t.co/SbkLCnmN0p">pic.twitter.com/SbkLCnmN0p</a></p>&mdash; Healthyish (@healthy_ish) <a href="https://twitter.com/healthy_ish/status/903342397370847232">31 August 2017</a></blockquote>
+			</div>
+		</div>
+		<div class="media" id="media-tweet2">
+			<img class="tweeter-icon" src="http://res.cloudinary.com/dywawuwi4/image/upload/v1505339937/twitter-icon_fmabl7.png">
+			<div id="media-post2" class="media-post"><blockquote class="twitter-tweet" data-cards="hidden" data-lang="en-gb"><p lang="en" dir="ltr">25 Feel-Good Recipes You Should Absolutely Make Before Summer Ends <a href="https://t.co/jFV1Tfknyw">https://t.co/jFV1Tfknyw</a> <a href="https://t.co/ly0RC2QfgM">pic.twitter.com/ly0RC2QfgM</a></p>&mdash; BuzzFeed Food (@BuzzFeedFood) <a href="https://twitter.com/BuzzFeedFood/status/903350981781471232">31 August 2017</a></blockquote>
+<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+			<div id="media-img2"  class="media-img">
+				<blockquote class="twitter-tweet" data-lang="en-gb"><p lang="en" dir="ltr">25 Feel-Good Recipes You Should Absolutely Make Before Summer Ends <a href="https://t.co/jFV1Tfknyw">https://t.co/jFV1Tfknyw</a> <a href="https://t.co/ly0RC2QfgM">pic.twitter.com/ly0RC2QfgM</a></p>&mdash; BuzzFeed Food (@BuzzFeedFood) <a href="https://twitter.com/BuzzFeedFood/status/903350981781471232">31 August 2017</a></blockquote>
 
-      <div class="row">
-        <div class="col-md-9">
-        </div>
-        <div class="col-md-3">
-          <img src="assets/img/Untitled%20drawing(3).svg" style="transform: rotate(-40deg)">
-        </div>
-      </div>
-    </div>     
-  </section>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			</p>
+		</div>
+		<div class="media" id="dummy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+		</div>
+		<div class="media" id="media-tweet3">
+			<div class="media-post" id="media-post3">
+				<blockquote class="twitter-tweet" data-cards="hidden" data-lang="en-gb"><p lang="en" dir="ltr">Join Hut Rewards &amp; start earning FREE pizza. Need we say more? Sign up: <a href="https://t.co/5ry8NBu4Jw">https://t.co/5ry8NBu4Jw</a> . Restrict. apply. <a href="https://t.co/AKlK0BTFkX">pic.twitter.com/AKlK0BTFkX</a></p>&mdash; Pizza Hut (@pizzahut) <a href="https://twitter.com/pizzahut/status/900032337257168896">22 August 2017</a></blockquote>
 
-  <section id="portfolio" class="content-section" style="background: linear-gradient(-56deg, rgb(255,243,226) 0%, rgb(226,255,233) 100%), #faf5ef; height: 100%;">
-    <img src="assets/img/Untitled%20drawing(6).svg" style="width: 20%;">
-</section>
+			</div>
+			<div class="media-img">
+				<blockquote class="twitter-tweet" data-lang="en-gb"><p lang="en" dir="ltr">Join Hut Rewards &amp; start earning FREE pizza. Need we say more? Sign up: <a href="https://t.co/5ry8NBu4Jw">https://t.co/5ry8NBu4Jw</a> . Restrict. apply. <a href="https://t.co/AKlK0BTFkX">pic.twitter.com/AKlK0BTFkX</a></p>&mdash; Pizza Hut (@pizzahut) <a href="https://twitter.com/pizzahut/status/900032337257168896">22 August 2017</a></blockquote>
 
-  <section id="contact" class="map" style="background: #0001a9;height: 100%;">
-    <canvas id="canvas"></canvas>
-      <img src="assets/img/Untitled%20drawing(5)-1.svg">
-  </section>
+			</div>
+			<img class="tweeter-icon" src="http://res.cloudinary.com/dywawuwi4/image/upload/v1505339937/twitter-icon_fmabl7.png">
+		</div> -->
+	</section>
+	<!-- our menu section -->
+	<section id="achivements">
+<css-doodle grid="10 x 30">
+  :doodle {
+    @size: 2em;
+		grid-gap: 25px;
+  }
+	
+	transition: all .4s ease;		
+	border-top: 1px solid hsl(@rand(137.50deg, 360deg), 80%, 80%);
+	border-right: 1px solid hsl(@rand(137.50deg, 360deg), 80%, 80%);
 
-  <!-- partial -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-  <script src="assets/js/fractal_tree_script.js"></script>
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/stylish-portfolio.js"></script>
+	:after {
+		content: \@hex(@rand(9632, 9687));
+		color: hsl(@rand(137.50deg, 360deg), 80%, 80%);
+	}
+	
+	@random {
+		border-top: 1px solid transparent;
+		border-right: 1px solid transparent;
+		border-bottom: 1px solid hsl(@rand(137.50deg, 360deg), 80%, 80%);
+		border-left: 1px solid hsl(@rand(137.50deg, 360deg), 80%, 80%);
+		border-style: dashed;
+	}
+		  </css-doodle>
+
+		<div class="header">
+			<h1>Achivements</h1>
+			<div class="through-line"></div>
+			<button class=know-more>KNOW MORE</button>
+		</div>
+		<div id="colContainer">
+		<div class="cols" id="starters">
+			<ul>
+				<h1 class="col-headers">A</h1>
+				<li>
+					<h6>Pythenon</h6>
+					<p>Quinoa and cheddar croquettas with aji rocotto & pineapple salsa (v)</p>
+					<button>£4.95</button>
+				</li>
+				<li>
+					<h6>Olympiad</h6>
+					<p>Slow cooked, crispy pork belly with sweet soy sauce</p>
+					<button>£6.95</button>
+				</li>
+				<li>
+					<h6>MahaIT Genius</h6>
+					<p>Crispy baby squid pickled jalapeno miso salsa</p>
+					<button>£6.95</button>
+				</li>
+			</ul>
+		</div>
+		<div  class="cols" id="main-courses">
+			<ul>
+				<h1 class="col-headers">B</h1>
+				<li>
+					<h6>EL CLASICO</h6>
+					<p>Sea bass ceviche with aji limo tiger's milk,sweet potota puree, choclo corn, red onion, coriander</p>
+					<button>£8.95</button>
+				</li>
+				<li>
+					<h6>TRADITO CALLAO</h6>
+					<p>Quinoa and cheddar croquettas with aji rocotto & pineapple salsa (v)</p>
+					<button>£4.95</button>
+				</li>
+	
+			</ul>
+		</div>
+		<div class=cols id="sides">
+			<ul>
+				<h1 class="col-headers">C</h1>
+				<li>
+					<h6>SUPER POLLO</h6>
+					<p>Quinoa and cheddar croquettas with aji rocotto & pineapple salsa (v)</p>
+					<button>£4.95</button>
+				</li>
+				<li>
+					<h6>PATATAS FRITAS</h6>
+					<p>Quinoa and cheddar croquettas with aji rocotto & pineapple salsa (v)</p>
+					<button>£3.95</button>
+				</li>
+			</ul>
+		</div>
+		<div class="cols" id="desserts">
+			<ul>
+				<h1 class="col-headers">D</h1>
+				<li>
+					<h6>ICECREAM</h6>
+					<p>Quinoa and cheddar croquettas with aji rocotto & pineapple salsa (v)</p>
+					<button>£4.95</button>
+				</li>
+				<li>
+					<h6>TIRAMISU</h6>
+					<p>Quinoa and cheddar croquettas with aji rocotto & pineapple salsa (v)</p>
+					<button>£4.95</button>
+				</li>
+				<li>
+					<h6>CHOCOLATE BROWNIE</h6>
+					<p>Quinoa and cheddar croquettas with aji rocotto & pineapple salsa (v)</p>
+					<button>£3.95</button>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</section>
+	<!-- recipe section -->
+	<section id="recipe">
+		<div class="header">
+			<!-- <h3>POPULAR</h3> -->
+			<h1>Projects<br>.....</h1>
+			<div class="through-line"></div>
+			<button class="know-more">See All</button>
+		</div>
+		<div id="recipe-share">
+			<h2>Each project uses different design style</h2>
+			<button class="know-more">View More</button>
+		</div>
+
+
+		<div id="recipeShowCase" class="container-fluid">
+			<div class="row" style=" margin-left: 10%; margin-right: 10%;">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-3">
+							<div class='projContainer'>
+								<div class='boxPC'>
+									<div class="imgViewPort">
+										<img class="recipeImg" src="img/van.png">
+										<img class="arrow" src="http://res.cloudinary.com/dywawuwi4/image/upload/v1505339923/go-btn_espo94.png">
+									</div>
+									
+									<div class='textPC'>
+									<h3>Lorem ipsum dolor sit amet, consectetur </h3>
+									<p class="textPC">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									</p>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class='projContainer'>
+								<div class='boxPC'>
+									<div class="imgViewPort">
+										<img class="recipeImg" src="img/van.png">
+										<img class="arrow" src="http://res.cloudinary.com/dywawuwi4/image/upload/v1505339923/go-btn_espo94.png">
+									</div>
+									
+									<div class='textPC'>
+									<h3>Lorem ipsum dolor sit amet, consectetur </h3>
+									<p class="textPC">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									</p>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class='projContainer'>
+								<div class='boxPC'>
+									<div class="imgViewPort">
+										<img class="recipeImg" src="img/van.png">
+										<img class="arrow" src="http://res.cloudinary.com/dywawuwi4/image/upload/v1505339923/go-btn_espo94.png">
+									</div>
+									
+									<div class='textPC'>
+									<h3>Lorem ipsum dolor sit amet, consectetur </h3>
+									<p class="textPC">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									</p>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class='projContainer'>
+								<div class='boxPC'>
+									<div class="imgViewPort">
+										<img class="recipeImg" src="img/van.png">
+										<img class="arrow" src="http://res.cloudinary.com/dywawuwi4/image/upload/v1505339923/go-btn_espo94.png">
+									</div>
+									
+								  <div class='textPC'>
+									<h3>Lorem ipsum dolor sit amet, consectetur </h3>
+									<p class="textPC">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									</p>
+								  </div>
+
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- contact-login section -->
+	<section id="contact-login">
+		<div class="header">
+			<h3>COLLABORATE</h3>
+			<h1>WITH US</h1>
+			<div class="through-line"></div>
+		</div>
+		<div id="addition-info">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br><br>
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+			</p>
+		</div>
+	
+	</section>
+	<footer>
+		<!-- footer -->
+	</footer>
+	
+	<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<!-- Calling initMap function when google maps api loads -->
+	<!-- asyncronous JSON-P -->
+</body>
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/css-doodle@0.13.9/css-doodle.min.js"></script>
+
 </body>
 </html>

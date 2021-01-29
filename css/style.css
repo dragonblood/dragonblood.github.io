@@ -1,0 +1,477 @@
+@import url('http://fonts.googleapis.com/css?family=Fjalla+One');
+html,body{
+	padding:0;
+	margin:0;
+	font-family:'Fjalla One', sans-serif;
+	width:100%;
+	height: 100%;
+	color:#333;
+}
+header{
+	height: 70px;
+	position: fixed;
+	width:100%;
+	z-index: 10
+}
+#about{
+	background:  #ffce6d no-repeat 50% 50%;
+	background-size: cover;
+	width:100%;
+	height: 100%
+}
+#about #logo{
+	float: left;
+	margin-top:10px;
+	margin-left: 20px
+}
+#vipul{
+	position: absolute;
+	right: 10px;
+	height: 60%;
+	bottom: 10px;
+}
+
+#about nav{
+	float: left;
+	width: 90%;
+	margin-top: 25px;
+	margin-left: 50px;
+}
+
+#about nav ul{
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+#about nav ul li{
+	float: left;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 16px;
+	margin-right: 55px
+}
+#about nav ul li a{
+	color: inherit;
+}
+#about nav ul #contactLink{
+	float: right;
+}
+#about nav ul #loginLink{
+	float: right;
+}
+#info{
+	position:fixed;
+	background-color: #fff;
+	transform: rotate(-90deg);
+	top:46%;
+	right:0;
+	padding: 5px;
+	font-size: 	16px;
+	border:none;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	color:#555;
+	z-index: 10
+}
+#heading-container{
+	color:#fff;
+	width:410px;
+	height: 204px;
+	position: absolute;
+	top:32%;
+	margin-top: -102px;
+	left:50%;
+	margin-left: -205px;
+	text-align: center;
+}
+#heading1{
+	font-size: 65px;
+	margin-bottom: 0;
+	margin-top: 0;
+	text-align: left;
+}
+#heading2{
+	font-size: 92px;
+	margin:0;
+	text-align: left;
+}
+#heading3{
+	font-size: 45px;
+	margin:0;
+}
+#countContainer{
+	position: fixed;	
+	bottom:20%;
+	left:30px;
+	z-index: 10
+}
+.pageCountShow{
+	border-top: 2px solid rgba(0, 0, 0, 0.3);
+	width:18px;
+	height: 22px;
+	font-size: 20px;
+	position: relative;
+}
+
+.active{
+	width:42px;
+}
+#count{
+	position: absolute;
+	top:-8px;
+	left:2px;
+	font-weight: bold
+}
+#community{
+	height: 1100px;
+	background-color: #c4ff00;
+	margin-top: 0
+}
+#community h1,p{
+	margin:0;
+}
+#intro{
+	width:240px;
+	padding: 10px;
+	position: relative;
+	left:10%;
+	top:70px;
+	float: left
+}
+/* #intro h1{
+	font-size: 40px
+}
+#intro .through-line{
+	width:260px;
+	border-top: 4px solid #FFDAC9;
+	position: absolute;
+	left:0;
+	top:80px
+} */
+.know-more{
+	background-color: #FFDAC9;
+	border:none;
+	font-weight: bold;
+	padding: 7px 12px;
+	outline:none;
+	margin-top:5px;
+	cursor: pointer;
+	color:#333;
+}
+#intro p{
+	margin-top: 25px;
+	font-size: 18px
+}
+#media-tweet{
+	width:450px;
+	float: left;
+	position: relative;
+	left:40%;
+	top:300px;
+	height: 250px;
+	background:url("../img/detail02.png"), url("../img/detail01.png"); 
+	background-repeat: no-repeat, no-repeat;
+	background-position: center bottom, right bottom;
+}
+
+.media-img{
+	width:200px;
+	height: 200px;
+	
+	float: left;
+	border:5px solid #fff;
+	overflow: hidden;
+}
+
+.media-post{
+	width:190px;
+	height: 200px;
+	float: left;
+	margin-left: 30px;
+	border:5px solid #fff;
+}
+.tweeter-icon{
+	position: absolute;
+	width:110px;
+	left:120px;
+	top:-25px;
+	z-index: 10
+}
+#media-tweet2{
+	width:660px;
+	height:250px;
+	clear: both;
+	position: relative;
+	top:310px;
+	left:10%;
+	background-image:url("../img/detail03.png");
+	background-repeat: no-repeat;
+	background-position: 40px 120px;
+}
+#media-post2{
+	margin-left: 0;
+	margin-right: 20px;
+	width:210px;
+	background-color: #fff;
+}
+#media-tweet2 p{
+	width:170px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 40px;
+	line-height: 1.4em;
+}
+#tweeter-icon2{
+	position: absolute;
+	width:110px;
+	top:-25px;
+	left:360px;
+}
+#dummy{
+	width:230px;
+	position: relative;
+	top:410px;
+	left:10%;
+	line-height: 1.4em;
+	float: left;
+}
+#media-tweet3{
+	float:left;
+	position: relative;
+	top:360px;
+	left:42%;
+}
+#media-post3{
+	margin-left: 0;
+	margin-right: 20px;
+	background-color: #fff
+}
+
+#achivements{
+	width:100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+}
+
+#colContainer{
+	height: 100%;
+	width:1050px;
+	position: absolute;
+	left:50%;
+	margin-left: -502px;
+}
+
+.header{
+	position: absolute;
+	width: 250px;
+	left:50%;
+	margin-left: -125px;
+	margin-top:60px;
+	font-size: 30px;
+}
+#achivements .through-line{
+	width:250px;
+	height: 5px;
+	border-top: 5px solid #FFDAC9;
+	position:relative;
+	top:-70px;
+}
+#achivements .know-more{
+	position: relative;
+	top:-50px;
+}
+.cols{
+	text-align: left;
+	width:260px;
+	height: 100%;
+	border-right: 1px solid lightgrey;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.cols ul{
+	list-style-type: none;
+	margin:0;
+}
+.col-headers{
+	margin-left: -20px;
+	font-size: 44px;
+	margin-top: 0
+}
+.cols ul li p{
+	width:170px;
+	font-family: sans-serif;
+	color:#666;
+}
+.cols button{
+	margin-top: 12px;
+	border:none;
+	padding: 5px 12px;
+	background-color: #fff;
+	border:2px solid #FFDAC9;
+	cursor:pointer;
+}
+#starters ul{
+	position: absolute;
+}
+
+#main-courses ul{
+	position: absolute;
+}
+
+#sides ul{
+	position: absolute;
+}
+
+#desserts ul{
+	border-right: none;
+	position: absolute;
+}
+
+/* ################################################################ RECIPE #################################################### */
+#recipe{
+	height:100%;
+	width:100%;
+	position: relative;
+	overflow-y: hidden;
+	background-color: #f1f3f6;
+}
+
+#recipe .header{
+	width: 130px;
+	position: absolute;
+	left:20%;
+	margin-top: 90px;
+}
+
+#recipe .header h1{
+	margin:0;
+}
+#recipe .header h3{
+	margin:0;
+}
+
+
+
+.boxPC, .projContainer {
+	display: flex;
+	justify-content: center;
+  }
+
+.projContainer {
+	width: 100%;
+	height: auto;
+  }
+  
+  .boxPC {
+	flex-direction: column;
+	width: 300px;
+	height: 420px;
+	background: #f1f3f6;
+	border-radius: 20px;
+	box-shadow: inset 0 0 15px rgba(55, 84, 170, 0), inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15), -7px -7px 20px white, inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+  }
+
+  .recipeImg{
+	  margin:20% 5% 2% 5%;
+	  width:90%
+  }
+
+  .textPC {
+	height: auto;
+	margin: 5%;
+  }
+  .textPC h1 {
+	font-size: 1.5em;
+	font-weight: 600;
+  }
+  .textPC p {
+	margin-top: 2em;
+	line-height: 1.45em;
+  }
+  
+  
+
+
+
+#recipe .through-line{
+	width:160px;
+	height: 5px;
+	border-top: 5px solid #FFDAC9;
+	position:relative;
+	top:-33px;
+	left:-13px;
+}
+#recipe-share{
+	position: absolute;
+	left:55%;
+	top:150px;
+}
+#recipe-share h2{
+	font-weight: normal;
+	font-size: 28px
+}
+#recipe-share button{
+	float: right;
+	margin-top: -12px;
+	padding:4px 8px;
+}
+#recipeShowCase{
+	position: relative;
+	display: flex;
+	top:320px;
+}
+
+.arrow boxPC{
+	position: absolute;
+	bottom: 0;
+	right: 0
+}
+
+
+#contact-login{
+	width:100%;
+	height: 400px;
+	background-color: #FFDAC9;
+	position: relative;
+}
+#contact-login .through-line{
+	width:160px;
+	height: 5px;
+	border-top: 7px solid #fff;
+	position:relative;
+	top:-34px;
+	left:-12px;
+}
+#contact-login .header{
+	position: absolute;
+	left:20%;
+}
+#contact-login .header h1{
+	margin:0;
+	font-size: 45px
+}
+#contact-login .header h3{
+	margin:0;
+	font-size: 28px
+}
+#addition-info{
+	width:300px;
+	line-height: 1.5em;
+	color:#666;
+	position: absolute;
+	top:180px;
+	left: 10%;
+	font-size: 14px;
+	float: left
+}
+
+footer{
+	width:100%;
+	height: 130px;
+	background-color: #333;
+	clear: both
+}
