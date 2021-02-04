@@ -31,7 +31,8 @@ header{
 	bottom: 10px;
 }
 
-#about nav{
+
+/* #about nav{
 	float: left;
 	width: 90%;
 	margin-top: 25px;
@@ -58,7 +59,9 @@ header{
 }
 #about nav ul #loginLink{
 	float: right;
-}
+} */
+
+
 #info{
 	position:fixed;
 	background-color: #fff;
@@ -124,7 +127,7 @@ header{
 	font-weight: bold
 }
 #community{
-	height: 1100px;
+	height: 100%;
 	background-color: #c4ff00;
 	margin-top: 0
 }
@@ -135,9 +138,16 @@ header{
 	width:240px;
 	padding: 10px;
 	position: relative;
-	left:10%;
-	top:70px;
-	float: left
+	left: 120px;
+	top:30%;
+}
+.headphones{
+	width:300px;
+	position: absolute;
+	transform: rotate(-50deg);
+	left:-30px;
+	top:95%;
+	float: left;
 }
 /* #intro h1{
 	font-size: 40px
@@ -155,7 +165,8 @@ header{
 	font-weight: bold;
 	padding: 7px 12px;
 	outline:none;
-	margin-top:5px;
+	position: relative;
+	right:1%;
 	cursor: pointer;
 	color:#333;
 }
@@ -163,7 +174,7 @@ header{
 	margin-top: 25px;
 	font-size: 18px
 }
-#media-tweet{
+/* #media-tweet{
 	width:450px;
 	float: left;
 	position: relative;
@@ -246,7 +257,7 @@ header{
 	margin-left: 0;
 	margin-right: 20px;
 	background-color: #fff
-}
+} */
 
 #achivements{
 	width:100%;
@@ -269,7 +280,7 @@ header{
 	width: 250px;
 	left:50%;
 	margin-left: -125px;
-	margin-top:60px;
+	top: 7%;
 	font-size: 30px;
 }
 #achivements .through-line{
@@ -301,7 +312,8 @@ header{
 	font-size: 44px;
 	margin-top: 0
 }
-.cols ul li p{
+.cols ul p{
+	/* li */
 	width:170px;
 	font-family: sans-serif;
 	color:#666;
@@ -333,11 +345,12 @@ header{
 
 /* ################################################################ RECIPE #################################################### */
 #recipe{
-	height:100%;
+	min-height:100%;
 	width:100%;
 	position: relative;
 	overflow-y: hidden;
 	background-color: #f1f3f6;
+	display: flex;
 }
 
 #recipe .header{
@@ -475,3 +488,427 @@ footer{
 	background-color: #333;
 	clear: both
 }
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Open+Sans:400italic,300italic);
+
+/* .home-nav {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(https://images.unsplash.com/photo-1446771326090-d910bfaf00f6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9216e1a8598a8530ce329b41a8f3725d);
+  background-size: cover;
+  background-position: center center;
+} */
+
+
+/* ====================================
+Navigation 
+==================================== */
+
+.overlay-navigation {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 0%, 0.8);
+  transform: translateY(-100%);
+}
+
+.overlay-slide-down {
+  transition: all .4s ease-in-out;
+  transform: translateY(0)
+}
+
+.overlay-slide-up {
+  transition: all .8s ease-in-out;
+  transform: translateY(-100%)
+}
+
+navo,
+navo ul {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+navo ul {
+  display: flex;
+  list-style: none;
+}
+
+navo ul li {
+  flex-basis: 20%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  transform: translateY(-100%);
+}
+
+navo li a {
+  position: relative;
+  top: 46%;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Work sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+navo li a:before {
+  content: '';
+  width: 70px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 100;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all .2s linear;
+}
+
+navo li a:after {
+  content: attr(data-content);
+  font-size: 0.7rem;
+  transition: all .2s linear;
+  opacity: 0;
+  position: absolute;
+  z-index: 100;
+  color: #fff;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+  right: 0;
+  bottom: -50px;
+  text-transform: none;
+  font-family: 'Open sans', serif;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0;
+}
+
+navo li a:hover:before {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+navo li a:hover:after {
+  transform: translateY(15px);
+  opacity: 1;
+}
+navo li:nth-of-type(1){background-color: #99B998}
+navo li:nth-of-type(2){background-color: #FDCEA9}
+navo li:nth-of-type(3){background-color: #F4837D}
+navo li:nth-of-type(4){background-color: #EA495F}
+navo li:nth-of-type(5){background-color: #29363B}
+
+.slide-in-nav-item {
+  animation: slide-in-nav-item 0.4s linear 1 .2s both;
+}
+
+.slide-in-nav-item-delay-1 {
+  animation: slide-in-nav-item 0.4s linear 1 .4s both;
+}
+
+.slide-in-nav-item-delay-2 {
+  animation: slide-in-nav-item 0.4s linear 1 .6s both;
+}
+
+.slide-in-nav-item-delay-3 {
+  animation: slide-in-nav-item 0.4s linear 1 .8s both;
+}
+
+.slide-in-nav-item-delay-4 {
+  animation: slide-in-nav-item 0.4s linear 1 1s both;
+}
+
+.slide-in-nav-item-reverse {
+  animation: slide-in-nav-item-reverse .3s linear 1 .5s both;
+}
+
+.slide-in-nav-item-delay-1-reverse {
+  animation: slide-in-nav-item-reverse .3s linear 1 .4s both;
+}
+
+.slide-in-nav-item-delay-2-reverse {
+  animation: slide-in-nav-item-reverse .3s linear 1 .3s both;
+}
+
+.slide-in-nav-item-delay-3-reverse {
+  animation: slide-in-nav-item-reverse .3s linear 1 .2s both;
+}
+
+.slide-in-nav-item-delay-4-reverse {
+  animation: slide-in-nav-item-reverse .3s linear 1 both;
+}
+
+
+/* ====================================
+Burger king
+==================================== */
+
+.open-overlay {
+  position: fixed;
+  right: 5rem;
+  top: 3.2rem;
+  z-index: 100;
+  width: 34px;
+  display: block;
+  cursor: pointer;
+}
+
+.open-overlay span {
+  display: block;
+  height: 1px;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.animate-top-bar {
+  animation: animate-top-bar .6s linear 1 both
+}
+
+.animate-bottom-bar {
+  animation: animate-bottom-bar .6s linear 1 both
+}
+
+.animate-middle-bar {
+  animation: animate-middle-bar .6s linear 1 both
+}
+
+.animate-out-top-bar {
+  animation: animate-out-top-bar .6s linear 1 both
+}
+
+.animate-out-bottom-bar {
+  animation: animate-out-bottom-bar .6s linear 1 both
+}
+
+.animate-out-middle-bar {
+  animation: animate-out-middle-bar .6s linear 1 both
+}
+
+
+/* ====================================
+Animation keyframes
+==================================== */
+
+@keyframes slide-in-nav-item {
+  from {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%)
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+}
+
+@keyframes slide-in-nav-item-reverse {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%)
+  }
+}
+
+@keyframes animate-top-bar {
+  0% {
+    background-color: #fff;
+  }
+  50% {
+    -webkit-transform: translateY(9px);
+    transform: translateY(9px)
+  }
+  80% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    background-color: #fff
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    background-color: #29363B;
+  }
+}
+
+@keyframes animate-bottom-bar {
+  0% {
+    background-color: #fff;
+  }
+  50% {
+    -webkit-transform: translateY(-9px);
+    transform: translateY(-9px)
+  }
+  80% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    background-color: #fff;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    background-color: #29363B;
+  }
+}
+
+@keyframes animate-middle-bar {
+  0% {
+    background-color: #fff;
+  }
+  80% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #29363B;
+  }
+}
+
+@keyframes animate-out-top-bar {
+  0% {
+    background-color: #29363B
+  }
+  50% {
+    -webkit-transform: translateY(9px);
+    transform: translateY(9px)
+  }
+  80% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    background-color: #29363B
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+@keyframes animate-out-bottom-bar {
+  0% {
+    background-color: #29363B
+  }
+  50% {
+    -webkit-transform: translateY(-9px);
+    transform: translateY(-9px)
+  }
+  80% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    background-color: #29363B;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+@keyframes animate-out-middle-bar {
+  0% {
+    background-color: #29363B
+  }
+  80% {
+    background-color: #29363B;
+  }
+  100% {
+    background-color: rgb(0, 0, 0);
+  }
+}
+.home-nav a{
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: absolute;
+  z-index: 10;
+  top:50px;
+  left:50px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #fff;
+}
+@media (max-width: 640px) {
+  navo ul li a {
+    font-size: 11px;
+  }
+  navo li a:after {
+    font-size: 0.6rem;
+  }
+  .open-overlay {
+    right: 1rem;
+  }
+  navo li a:before {
+    width: 15px;
+  }
+}
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+.anim-typewriter{
+	animation: typewriter 4s steps(44) 1s 1 normal both,
+			   blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+	from{width: 0;}
+	to{width: 24em;}
+  }
+  @keyframes blinkTextCursor{
+	from{border-right-color: rgba(255,255,255,.75);}
+	to{border-right-color: transparent;}
+  }
+
+  /* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+	color: #fff;
+	font-family: monospace;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: 
+	  typing 3.5s steps(30, end),
+	  blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: orange }
+  }
