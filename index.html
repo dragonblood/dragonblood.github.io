@@ -14,16 +14,20 @@
 	<link rel="stylesheet" type="text/css" href="css/neumorphism.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel='stylesheet' href='https://use.typekit.net/skn8ash.css'>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'>
 </head>
 <body>
 
 	<div class="overlay-navigation">
 		<navo role="navigation">
 		  <ul>
-			<li><a class="links" href="#about" data-content="The beginning">Intro</a></li>
-			<li><a class="links" href="#community" data-content="Don't hesitate">About</a></li>
+			<li><a class="links" href="#intro" data-content="The beginning">Intro</a></li>
+			<li><a class="links" href="#aboutMe" data-content="Don't hesitate">About</a></li>
 			<li><a class="links" href="#achivements" data-content="Curious?">Achivements</a></li>
-			<li><a class="links" href="#recipe" data-content="I got game">Projects</a></li>
+			<li><a class="links" href="#projects" data-content="I got game">Projects</a></li>
 			<li><a class="links" href="#contact-login" data-content="Only the finest">Contact</a></li>
 		  </ul>
 		</navo>
@@ -36,7 +40,7 @@
 		</div>
 	</section>
 
-	<section id="about">
+	<section id="intro">
 		<div class="container-fluid ">
 			<div id='stars'></div>
 			<div id='stars2'></div>
@@ -45,31 +49,18 @@
 		<div id="heading-container" class="typewriter">
 			<p id=heading2>Hi</p>
 			<h1 id="heading1" >Im Vipul</h1>
-			<!-- <h2 id="heading3">Vipul</h2> -->
 		</div>
 		
 		<img id="vipul" src="img/vipul.svg">
 	</section>
 
 
-	<!-- <button type="button" id="info">REQUEST INFO</button> -->
-	<div id="countContainer">
-		<span id="count">01</span>
-		<div class="pageCountShow active" id="viewport1"></div>
-		<div class="pageCountShow" id="viewport2"></div>
-		<div class="pageCountShow" id="viewport3"></div>
-		<div class="pageCountShow" id="viewport4"></div>
-		<div class="pageCountShow" id="viewport5"></div>
-		<div class="pageCountShow" id="viewport6"></div>
-	</div>
-
-
-	<section id="community">
+	<section id="aboutMe">
 		<img class="headphones" src="img/Untitled%20drawing-1.svg">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-4">
-					<div id="intro">
+					<div id="int">
 						<!-- <h1>MEET OUR COMMUNITY</h1> -->
 						<!-- <button type="input" class="know-more">KNOW MORE</button> -->
 						<img src="img/About_me.png">
@@ -79,20 +70,21 @@
 					</div>
 				</div>
 				<div class="col-md-4">
-Something good about myself to write
-like my hobbies and passion and how i aproach problems
-my leadrship skills 
-my flaws etc.
+					Something good about myself to write
+					like my hobbies and passion and how i aproach problems
+					my leadrship skills 
+					my flaws etc.
 				</div>
 				<div class="col-md-4">
-also few photos splinkled here and there
+					also few photos splinkled here and there
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- our menu section -->
+
 	<section id="achivements">
+		<h2>Achivements</h2>
 		<css-doodle grid="10 x 30">
   			:doodle {
     			@size: 2em;
@@ -116,106 +108,56 @@ also few photos splinkled here and there
 				border-style: dashed;
 			}
 		</css-doodle>
-
-
-		<div id="colContainer" class="container-fluid">
-
-			<div class="row">
-				<div class="col text-center">
-					<div class="mb-5">
-						<span class="h5 text-center">Default Accordion</span>
-					</div>
+		<div id="achivementCardbox">
+			<div class="achivementCard">
+				<h3 class="title">Card 1</h3>
+				<div class="bar">
+				<div class="emptybar"></div>
+				<div class="filledbar"></div>
 				</div>
 			</div>
-			<div class="row justify-content-center">
-				<div class="col-12 col-md-10 col-lg-8">
-					<!--Accordion-->
-					<div class="accordion shadow-soft rounded" id="accordionExample1">
-						<div class="card card-sm card-body bg-primary border-light mb-0">
-							<a href="#panel-1" data-target="#panel-1" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
-								<span class="h6 mb-0 font-weight-bold">Our Company</span>
-								<span class="icon"><span class="fas fa-plus"></span></span>
-							</a>
-							<div class="collapse" id="panel-1">
-								<div class="pt-3">
-									<p class="mb-0">
-										At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also
-										helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="card card-sm card-body bg-primary border-light mb-0">
-							<a href="#panel-2" data-target="#panel-2" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
-								<span class="h6 mb-0 font-weight-bold">Neumorphism Components</span>
-								<span class="icon"><span class="fas fa-plus"></span></span>
-							</a>
-							<div class="collapse" id="panel-2">
-								<div class="pt-3">
-									<p class="mb-0">
-										At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also
-										helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision. </p>
-								</div>
-							</div>
-						</div>
-						<div class="card card-sm card-body bg-primary border-light">
-							<a href="#panel-3" data-target="#panel-3" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
-								<span class="h6 mb-0 font-weight-bold">Licenses</span>
-								<span class="icon"><span class="fas fa-plus"></span></span>
-							</a>
-							<div class="collapse" id="panel-3">
-								<div class="pt-3">
-									<p class="mb-0">
-										At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also
-										helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision. </p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-		</div>
+			<div class="achivementCard">
+				<h3 class="title">Card 2</h3>
+				<div class="bar">
+				<div class="emptybar"></div>
+				<div class="filledbar"></div>
+				</div>
+			</div>
+			<div class="achivementCard">
+				<h3 class="title">Card 3</h3>
+				<div class="bar">
+				<div class="emptybar"></div>
+				<div class="filledbar"></div>
+				</div>
+			</div>
+			<div class="achivementCard">
+				<h3 class="title">Card 4</h3>
+				<div class="bar">
+				<div class="emptybar"></div>
+				<div class="filledbar"></div>
+				</div>
+			</div>
+		  </div>	
 	</section>
 
 
-	<!-- recipe section -->
-	<section id="recipe">
+	<!-- projects section -->
+	<section id="projects">
 		<div class="header">
 			<!-- <h3>POPULAR</h3> -->
 			<h1>Projects</h1>
 			<div class="through-line"></div>
 			<button class="know-more">See All</button>
 		</div>
-		<div id="recipe-share">
+		<div id="projects-share">
 			<h2>Each project uses different design style</h2>
 			<button class="know-more">View More</button>
 		</div>
 
 
-		<div id="recipeShowCase" class="container-fluid">
+		<div id="projectShowCase" class="container-fluid">
 			<div class="col-md-12">
 				<div class="row">
-					<div class="col-md-3">
-						<div class="card bg-primary border-light shadow-soft">
-							<img src="/img/van.png" class="card-img-top rounded-top" alt="Themesberg office">
-							<div class="card-body">
-								<span class="h6 icon-tertiary small"><span class="fas fa-medal mr-2"></span>Awards</span>
-								<h3 class="h5 card-title mt-3">We partnered up with Google</h3>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary btn-sm">Learn More</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="card bg-primary border-light shadow-soft">
-							<img src="/img/van.png" class="card-img-top rounded-top" alt="Themesberg office">
-							<div class="card-body">
-								<span class="h6 icon-tertiary small"><span class="fas fa-medal mr-2"></span>Awards</span>
-								<h3 class="h5 card-title mt-3">We partnered up with Google</h3>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary btn-sm">Learn More</a>
-							</div>
-						</div>
-					</div>
 					<div class="col-md-3">
 						<div class="card bg-primary border-light shadow-soft">
 							<img src="/img/van.png" class="card-img-top rounded-top" alt="Themesberg office">
@@ -235,39 +177,41 @@ also few photos splinkled here and there
 
 
 	<!-- contact-login section -->
-	<section id="contact-login">
+	<section  id="contact-login">
 		<div class="header">
-			<h3>COLLABORATE</h3>
-			<h1>WITH US</h1>
+			<h3>Contact</h3>
+			<h1>Me</h1>
 			<div class="through-line"></div>
 		</div>
 		<div id="addition-info">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<br><br>
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+			<p>
+				Petkar.vipul@gmail.com<br>
+				8999540311
 			</p>
+
+			<div style="padding:5px">
+				<button class="shadow-none btn btn-github" type="button" aria-label="github button" title="github button">
+					<span aria-hidden="true" class="fa fa-github"></span>
+				</button>
+				<button class="shadow-none btn btn-youtube" type="button" aria-label="youtube button" title="youtube button">
+					<span aria-hidden="true" class="fa fa-youtube-play"></span>
+				</button>
+				<button class="shadow-none btn btn-behance" type="button" aria-label="behance button" title="behance button">
+					<span aria-hidden="true" class="fa fa-twitter"></span>
+				</button>
+				<button class="shadow-none btn btn-twitch" type="button" aria-label="twitch button" title="twitch button">
+					<span aria-hidden="true" class="fa fa-linkedin"></span>
+				</button>
+				<button class="shadow-none btn btn-paypal" type="button" aria-label="paypal button" title="paypal button">
+					<span aria-hidden="true" class="fa fa-codepen"></span>
+				</button>
+				<button class="shadow-none btn btn-facebook" type="button" aria-label="facebook button" title="facebook button">
+					<span aria-hidden="true" class="fa fa-facebook"></span>
+				</button>
+			</div>
+
 		</div>
 
-		<div style="display: block; padding:5px">
-			<button class="btn btn-icon-only btn-github" type="button" aria-label="github button" title="github button">
-				<span aria-hidden="true" class="fa fa-github"></span>
-			</button>
-			<button class="btn btn-icon-only btn-youtube" type="button" aria-label="youtube button" title="youtube button">
-				<span aria-hidden="true" class="fa fa-youtube-play"></span>
-			</button>
-			<button class="btn btn-icon-only btn-behance" type="button" aria-label="behance button" title="behance button">
-				<span aria-hidden="true" class="fa fa-twitter"></span>
-			<button class="btn btn-icon-only btn-twitch" type="button" aria-label="twitch button" title="twitch button">
-				<span aria-hidden="true" class="fa fa-linkedin"></span>
-			</button>
-			<button class="btn btn-icon-only btn-paypal" type="button" aria-label="paypal button" title="paypal button">
-				<span aria-hidden="true" class="fa fa-codepen"></span>
-			</button>
-			<button class="btn btn-icon-only btn-facebook" type="button" aria-label="facebook button" title="facebook button">
-				<span aria-hidden="true" class="fa fa-facebook"></span>
-			</button>
-		</div>
 			<!-- <button class="btn btn-icon-only btn-twitch" type="button" aria-label="twitch button" title="twitch button">
 				<span aria-hidden="true" class="fa fa-twitch"></span>
 			</button>
@@ -275,8 +219,8 @@ also few photos splinkled here and there
 				<span aria-hidden="true" class="fa fa-paypal"></span>
 			</button>
 			<button class="btn btn-icon-only btn-behance" type="button" aria-label="behance button" title="behance button">
-				<span aria-hidden="true" class="fa fa-behance"></span> -->
-			</button>
+				<span aria-hidden="true" class="fa fa-behance"></span>
+			</button>-->
 
 
 	</section>
@@ -291,6 +235,20 @@ also few photos splinkled here and there
 	<script src="script.js"></script>
 	<script src="https://use.fontawesome.com/fdbcb0841f.js"></script>
 
+
+	<script src="./vendor/popper.js/dist/umd/popper.min.js"></script>
+	<script src="./vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="./vendor/headroom.js/dist/headroom.min.js"></script>
+
+	<!-- Vendor JS -->
+	<script src="./vendor/onscreen/dist/on-screen.umd.min.js"></script>
+	<script src="./vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+	<script async defer="defer" src="https://buttons.github.io/buttons.js"></script>
+	<!-- neumorphism JS -->
+
+	<script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
 </body>
 </html>
 <!-- partial -->
