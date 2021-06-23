@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const pageContainer = document.querySelector(".container");
+const pageContainer = document.querySelector(".page");
 
 /* SMOOTH SCROLL */
 const scroller = new LocomotiveScroll({
