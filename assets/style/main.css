@@ -327,14 +327,7 @@ abbr[title] {
   -moz-text-decoration: underline dotted;
   text-decoration: underline dotted;
 }
-b,
-strong {
-  font-weight: inherit;
-}
-b,
-strong {
-  font-weight: bolder;
-}
+
 code,
 kbd,
 samp {

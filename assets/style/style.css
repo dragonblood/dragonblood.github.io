@@ -52,23 +52,15 @@ body {
   display: flex;
 }
 
-.aboutMeImages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .headphones {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: -100px;
+  top: -100px;
   height: 200px;
 }
 
-.aboutMeText {
-  position: absolute;
-  left: 200px;
-  top: 130px;
+.about_me_text_heading {
+  font-size: 25px;
 }
 
 /* ###################################################||ACHIVEMENTS||############################################################# */
@@ -84,6 +76,7 @@ body {
   height: 100vh;
   text-align: center;
   position: relative;
+  z-index: -2;
 }
 
 .achivementsHeading {
@@ -92,7 +85,6 @@ body {
   font-size: 200px;
   font-family: 'Open Sans', sans-serif;
   font-family: "Tahoma";
-  z-index: -10;
 }
 
 #achivementCardbox {
