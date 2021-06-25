@@ -58,9 +58,10 @@ body {
 
 .headphones{
  position: absolute;
- left: -100px;
- top: -100px;
+ left: 30px;
+ top: -110px;
  height: 200px;
+ transform: rotate(-45deg)
 
 }
 .aboutMeText{
@@ -314,5 +315,102 @@ section:not(#projects) {
 /* ###################################################||CONTACT||############################################################ */
 #contact{
   background: var(--text-color);
-  color: var(--bg-color);
+  color: #D5D9CC;
+
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui, sans-serif;
+}
+
+.icons{
+  font-size: 100px;
+  /* padding: 10%; */
+  position: absolute;
+  bottom: 10%;
+}
+
+.contact_me_header{
+font-size:100px;
+position:absolute;
+left: 10%;
+top: 10%;
+}
+
+h1::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: #ffe600;
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+h1 {
+  position: relative;
+  font-size: 5rem;
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
+
+.fa-github-square:hover{
+  color:rgb(0, 142, 228);
+  border-radius: 40px;
+  box-shadow:  5px 5px 60px rgb(0, 142, 228),
+           -5px -5px 60px rgb(0, 142, 228);
+
+}
+
+.fa-youtube-play:hover{
+  color:rgb(255, 83, 83);
+  border-radius: 40px;
+  box-shadow:  0px 0px 60px rgb(255, 83, 83),
+           0px 0px 60px rgb(255, 83, 83);
+}
+
+.fa-twitter-square:hover{
+  color:rgb(104, 199, 255);
+  border-radius: 40px;
+  box-shadow:  0px 0px 60px rgb(104, 199, 255),
+           0px 0px 60px rgb(104, 199, 255);
+}
+
+.fa-linkedin-square:hover{
+  color:rgb(0, 142, 228);
+  border-radius: 40px;
+  box-shadow:  5px 5px 60px rgb(0, 142, 228),
+           -5px -5px 60px rgb(0, 142, 228);
+}
+
+.fa-codepen:hover{
+  color:rgb(0, 142, 228);
+  border-radius: 40px;
+  box-shadow:  5px 5px 60px rgb(0, 142, 228),
+           -5px -5px 60px rgb(0, 142, 228);
+}
+
+.fa-facebook-square:hover{
+  color:rgb(0, 142, 228);
+  border-radius: 40px;
+  box-shadow:  5px 5px 60px rgb(0, 142, 228),
+           -5px -5px 60px rgb(0, 142, 228);
 }

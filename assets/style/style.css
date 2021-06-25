@@ -54,9 +54,11 @@ body {
 
 .headphones {
   position: absolute;
-  left: -100px;
-  top: -100px;
+  left: 30px;
+  top: -110px;
   height: 200px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .about_me_text_heading {
@@ -320,6 +322,113 @@ section:not(#projects) {
 /* ###################################################||CONTACT||############################################################ */
 #contact {
   background: var(--text-color);
-  color: var(--bg-color);
+  color: #D5D9CC;
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  font-family: system-ui, sans-serif;
+}
+
+.icons {
+  font-size: 100px;
+  /* padding: 10%; */
+  position: absolute;
+  bottom: 10%;
+}
+
+.contact_me_header {
+  font-size: 100px;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+
+h1::before {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+h1:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #ffe600;
+  z-index: -1;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+h1 {
+  position: relative;
+  font-size: 5rem;
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
+
+.fa-github-square:hover {
+  color: #008ee4;
+  border-radius: 40px;
+  -webkit-box-shadow: 5px 5px 60px #008ee4, -5px -5px 60px #008ee4;
+          box-shadow: 5px 5px 60px #008ee4, -5px -5px 60px #008ee4;
+}
+
+.fa-youtube-play:hover {
+  color: #ff5353;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 0px 60px #ff5353, 0px 0px 60px #ff5353;
+          box-shadow: 0px 0px 60px #ff5353, 0px 0px 60px #ff5353;
+}
+
+.fa-twitter-square:hover {
+  color: #68c7ff;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 0px 60px #68c7ff, 0px 0px 60px #68c7ff;
+          box-shadow: 0px 0px 60px #68c7ff, 0px 0px 60px #68c7ff;
+}
+
+.fa-linkedin-square:hover {
+  color: #008ee4;
+  border-radius: 40px;
+  -webkit-box-shadow: 5px 5px 60px #008ee4, -5px -5px 60px #008ee4;
+          box-shadow: 5px 5px 60px #008ee4, -5px -5px 60px #008ee4;
+}
+
+.fa-codepen:hover {
+  color: #008ee4;
+  border-radius: 40px;
+  -webkit-box-shadow: 5px 5px 60px #008ee4, -5px -5px 60px #008ee4;
+          box-shadow: 5px 5px 60px #008ee4, -5px -5px 60px #008ee4;
+}
+
+.fa-facebook-square:hover {
+  color: #008ee4;
+  border-radius: 40px;
+  -webkit-box-shadow: 5px 5px 60px #008ee4, -5px -5px 60px #008ee4;
+          box-shadow: 5px 5px 60px #008ee4, -5px -5px 60px #008ee4;
 }
 /*# sourceMappingURL=style.css.map */
