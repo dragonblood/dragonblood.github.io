@@ -259,13 +259,13 @@ section:not(#projects) {
 }
 
 .projectHeader {
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 1;
-  font-weight: 800;
-  margin-bottom: 1rem;
-  position: absolute;
-  top: 10vw;
-  left: 10vw;
+  font-weight: 400;
+  margin: 1rem;
+  // position: absolute;
+  // top: 10vw;
+  // left: 10vw;
   z-index: 4;
   overflow-wrap: break-word;
   hyphens: auto;
@@ -279,10 +279,6 @@ section:not(#projects) {
   }
 }
 
-// h2 {
-//   font-size: 2rem;
-//   max-width: 400px;
-// }
 
 .credit {
   font-family: Termina, sans-serif;
