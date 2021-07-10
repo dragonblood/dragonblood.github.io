@@ -25,6 +25,14 @@
 :root {
   --text-color: #000;
   --bg-color: #e0e0e0;
+  --border-size: 0.125rem;
+  --duration: 250ms;
+  --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --color-primary: #e0e0e0;
+  --color-secondary: black;
+  --color-tertiary: dodgerblue;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --space: 1rem;
 }
 
 body {
@@ -33,7 +41,7 @@ body {
   background: var(--bg-color);
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
-  overflow: hidden;
+  overflow-x: hidden;
   width: unset;
   overscroll-behavior: none;
 }
@@ -84,6 +92,10 @@ body {
 
 .about_me_text_heading {
   font-size: 25px;
+}
+
+.about_me_text_para {
+  text-align: justify;
 }
 
 .myphotos {
@@ -242,7 +254,6 @@ body {
 /* ###################################################||PROJECTS||############################################################# */
 #projects {
   height: 100vh;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,6 +271,14 @@ section:not(#projects) {
   grid-gap: 2rem;
   padding: 50px 10vw;
   margin: auto;
+}
+
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 .projectCard {
@@ -309,6 +328,12 @@ section:not(#projects) {
   display: block;
 }
 
+.projectPara {
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: justify;
+}
+
 .credit {
   font-family: Termina, sans-serif;
 }
@@ -338,6 +363,70 @@ section:not(#projects) {
 
 .project-wrap > * {
   min-width: 30vw;
+}
+
+.multi-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.multi-button .submit_btn {
+  border-radius: 15px;
+  margin-top: 10%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  padding: calc(var(--space) / 1.125) var(--space) var(--space);
+  border: var(--border-size) solid black;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  font-size: 1.5rem;
+  font-family: var(--font-family);
+  text-transform: lowercase;
+  text-shadow: var(--shadow) 2px 2px;
+  -webkit-transition: flex-grow var(--duration) var(--ease), -webkit-box-flex var(--duration) var(--ease);
+  transition: flex-grow var(--duration) var(--ease), -webkit-box-flex var(--duration) var(--ease);
+  transition: flex-grow var(--duration) var(--ease);
+  transition: flex-grow var(--duration) var(--ease), -webkit-box-flex var(--duration) var(--ease), -ms-flex-positive var(--duration) var(--ease);
+}
+
+.multi-button .submit_btn + .submit_btn {
+  border-left: var(--border-size) solid black;
+  margin-left: calc(var(--border-size) * -1);
+}
+
+.multi-button .submit_btn:hover,
+.multi-button .submit_btn:focus {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  color: white;
+  outline: none;
+  text-shadow: none;
+  background-color: var(--color-secondary);
+}
+
+.multi-button .submit_btn:focus {
+  outline: var(--border-size) dashed var(--color-primary);
+  outline-offset: calc(var(--border-size) * -3);
+}
+
+.multi-button:hover .submit_btn:focus:not(:hover) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  outline-color: var(--color-tertiary);
+}
+
+.multi-button .submit_btn:active {
+  -webkit-transform: translateY(var(--border-size));
+          transform: translateY(var(--border-size));
 }
 
 /* ###################################################||CONTACT||############################################################ */

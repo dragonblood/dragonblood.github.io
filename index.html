@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>VIPUL PETKAR</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
   <link rel='stylesheet' href='https://use.typekit.net/skn8ash.css'>
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'>
   <link rel="stylesheet" href="assets/style/style.css">
@@ -102,7 +102,7 @@
               </div>
 
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
 
                     <!-- <h3 class="about_me_text_heading">
                         1heading
@@ -121,7 +121,7 @@
               </div>
 
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
 
                     <h3 class="about_me_text_heading">
                          this font is terrible for paragraphs change it
@@ -145,7 +145,7 @@
               </div>
 
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
 
                     <h3 class="about_me_text_heading">
                         Workshops
@@ -160,7 +160,7 @@
               </div>
 
               <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12">
 
                   <h3 class="about_me_text_heading">
                       Summer school
@@ -184,7 +184,7 @@
               </div>
 
               <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-12">
 
                       <h3 class="about_me_text_heading">
                           Developer community
@@ -199,7 +199,7 @@
               </div>
 
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
 
                     <h3 class="about_me_text_heading">
                         events
@@ -341,7 +341,7 @@
                     >
                     <h2>Select the projects you want to see.</h2>
                     </div>
-                    <div class="cb-checkbox-group" style="display: inline;">
+                    <div id="projectFilter" class="cb-checkbox-group" style="display: inline;">
                       <div
                         class="cb-checkbox cb-checkbox_rounded"
                         data-magnetic=""
@@ -353,9 +353,13 @@
                       >
                         <label
                           ><input
-                            type="checkbox"
+                            type="radio"
+                            class="projectFilterBtn active"
                             name="service[]"
-                            value="Web Apps" /><span
+                            value="Web Apps"
+                            onclick="filterSelection('web')"
+                            checked
+                            /><span
                             class="cb-checkbox_rounded-box"
                             ><span class="cb-checkbox_rounded-title"
                               ><span data-text="Web Apps"
@@ -376,9 +380,11 @@
                       >
                         <label
                           ><input
-                            type="checkbox"
+                            type="radio"
+                            class="projectFilterBtn"
                             name="service[]"
-                            value="site-design" /><span
+                            value="site-design"
+                            onclick="filterSelection('design')"/><span
                             class="cb-checkbox_rounded-box"
                             ><span class="cb-checkbox_rounded-title"
                               ><span data-text="Designs & Prototypes"
@@ -400,9 +406,12 @@
                     >
                       <label
                         ><input
-                          type="checkbox"
+                          type="radio"
+                          class="projectFilterBtn"
                           name="service[]"
-                          value="site-design" /><span
+                          value="site-design"
+                          onclick="filterSelection('ml')"
+                          /><span
                           class="cb-checkbox_rounded-box"
                           ><span class="cb-checkbox_rounded-title"
                             ><span data-text="Machine Learning"
@@ -424,9 +433,12 @@
                   >
                     <label
                       ><input
-                        type="checkbox"
+                        type="radio"
+                        class="projectFilterBtn"
                         name="service[]"
-                        value="site-design" /><span
+                        value="site-design" 
+                        onclick="filterSelection('app')"
+                        /><span
                         class="cb-checkbox_rounded-box"
                         ><span class="cb-checkbox_rounded-title"
                           ><span data-text="Mobile Apps"
@@ -445,93 +457,112 @@
           </div>
         </header>
 
-        <div class="projectCard">
+        <div class="filterDiv ml web app projectCard">
           <img class="projectImg" src="assets/images/F.png" alt="">
           <h2 class="projectHeader">Project F</h2>
-          <p>
-          AI AutoDubbing
-          November 2020 - working
+          <p class="projectPara">
+          AI AutoDubbing<br>
           Automated AI-assisted dubbing system. A user will upload a short video in a foreign language, 
           after receiving a target video audio is parsed and transcribed, the transcription is then translated 
           using google translation API and converted to speech using Text-to-Speech API. 
           Generated speech is closely matched to the target person's audio using Multi-Tacotron Voice Cloning.
           </p>
-          <button type="button" class="btn btn-outline-secondary">Github</button>
-          <button type="button" class="btn btn-outline-secondary">Demo</button>
+
+          <div class="multi-button">
+            <button class="submit_btn">Github</button>
+            <button class="submit_btn">Demo</button>
+          </div>
+
         </div>
 
-        <div class="projectCard">
+        <div class="filterDiv ml web projectCard">
           <img class="projectImg" src="assets/images/cyborg-9.png" alt="">
           <h2 class="projectHeader">Eridium</h2>
-          <p>
-          AI AutoDubbing
-          November 2020 - working
+          <p class="projectPara">
+          AI AutoDubbing<br>
           Automated AI-assisted dubbing system. A user will upload a short video in a foreign language, 
           after receiving a target video audio is parsed and transcribed, the transcription is then translated 
           using google translation API and converted to speech using Text-to-Speech API. 
           Generated speech is closely matched to the target person's audio using Multi-Tacotron Voice Cloning.
           </p>
-          <button type="button" class="btn btn-outline-secondary">Github</button>
-          <button type="button" class="btn btn-outline-secondary">Demo</button>
+
+          <div class="multi-button">
+            <button class="submit_btn">Github</button>
+            <button class="submit_btn">Demo</button>
+          </div>
+
         </div>
 
-        <div class="projectCard">
+        <div class="filterDiv web projectCard">
           <img class="projectImg" src="assets/images/Cataract.png" alt="">
           <h2 class="projectHeader">Cataract</h2>
-          <p>
-            Neumorphic Image Tagging and Analysis
-            July 2020 – June 2021
+          <p class="projectPara">
+            Neumorphic Image Tagging and Analysis<br>
             Sophistically animated and designed using neuromorphic principles,
             this Web app allows users to upload images, and then the user is presented
             with the analysis of the image using charts and graphs, using azure blob storage to store and app service to process the image.
             Deployed using Azure Appservice
           </p>
-          <button type="button" class="btn btn-outline-secondary">Github</button>
-          <button type="button" class="btn btn-outline-secondary">Demo</button>
+
+          <div class="multi-button">
+            <button class="submit_btn">Github</button>
+            <button class="submit_btn">Demo</button>
+          </div>
+
         </div>
 
-        <div class="projectCard">
+        <div class="filterDiv web projectCard">
           <img class="projectImg" src="assets/images/Boomerang.png" alt="">
           <h2 class="projectHeader">Boomerang</h2>
-          <p>
-          Beautiful Sentiment and Entity Analyser
-          March 2020 - July 2020
-          A Beautiful Parachuting themed sentiment and Entity responsive analyser.
-          Designed using SCSS, JavaScript. This project is built using google natural language API which
-          processes User-given text and returns JSON response, which is presented pleasingly using chartsJS to a user.
-          Deployed using Google AppEngine.
+          <p class="projectPara">
+            Beautiful Sentiment and Entity Analyser<br>
+            A Beautiful Parachuting themed sentiment and Entity responsive analyser.
+            Designed using SCSS, JavaScript. This project is built using google natural language API which
+            processes User-given text and returns JSON response, which is presented pleasingly using chartsJS to a user.
+            Deployed using Google AppEngine.
           </p>
-          <button type="button" class="btn btn-outline-secondary">Github</button>
-          <button type="button" class="btn btn-outline-secondary">Demo</button>
+
+          <div class="multi-button">
+            <button class="submit_btn">Github</button>
+            <button class="submit_btn">Demo</button>
+          </div>
+
         </div>
 
-        <div class="projectCard">
+        <div class="filterDiv ml web projectCard">
           <img class="projectImg" src="assets/images/Atlus.png" alt="">
           <h2 class="projectHeader">Atlus</h2>
-          <p>
-            ML Mental health Checker
-            January 2020 - March 2020
+          <p class="projectPara">
+            ML Mental health Checker<br>
             An exquisite looking WebApp built using the Django framework which uses machine learning
             (gradient boosted trees) trained using Kaggle dataset to predict whether or not an employee needs mental health treatment.
             The frontend was developed using Bootstrap.
             Deployed using Heroku.
           </p>
-          <button type="button" class="btn btn-outline-secondary">Github</button>
-          <button type="button" class="btn btn-outline-secondary">Demo</button>
+
+          <div class="multi-button">
+            <button class="submit_btn">Github</button>
+            <button class="submit_btn">Demo</button>
+          </div>
+
         </div>
 
-        <div class="projectCard">
+        <div class="filterDiv web projectCard">
           <img class="projectImg" src="assets/images/Login.png" alt="">
           <h2 class="projectHeader">Django Login</h2>
-          <p>
-            November 2019 - December 2019<br>
+          <p class="projectPara">
             Beautiful Multilanguage Login System built using Django framework,
             which allows users to register, login, and modify their account details.<br>
             Deployed using Heroku.
           </p>
-          <button type="button" class="btn btn-outline-secondary">Github</button>
-          <button type="button" class="btn btn-outline-secondary">Demo</button>
+
+          <div class="multi-button">
+            <button class="submit_btn">Github</button>
+            <button class="submit_btn">Demo</button>
+          </div>
+
         </div>
+
       </div>
     </section>
 
@@ -607,6 +638,7 @@
   <script src="https://unpkg.com/css-doodle@0.13.9/css-doodle.min.js"></script>
 
   <script src="https://use.fontawesome.com/e556b60b6b.js"></script>
+
 
 </body>
 </html>
