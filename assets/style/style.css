@@ -251,6 +251,12 @@ body {
   }
 }
 
+.achievement-list {
+  color: var(--bg-color);
+  font-family: 'rz-regular';
+  font-size: medium;
+}
+
 /* ###################################################||PROJECTS||############################################################# */
 #projects {
   height: 100vh;
