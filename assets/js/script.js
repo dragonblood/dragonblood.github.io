@@ -104,3 +104,53 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+const colors = ["#8ad7a0", "#ef8269", "#b8a3e1", "#f8d778"];
+const patterns = ["url(#pattern-stripes)", "url(#pattern-circles)"];
+const spots = "url(#pattern-circles)";
+const allthethangs = colors.concat(patterns);
+const sizes = [4, 6, 2];
+
+const bg = document.querySelector(".bg");
+
+const bgFill = gsap.utils.random(colors);
+bg.style.fill = bgFill;
+
+const remainingColors = colors.filter((color) => color !== bgFill);
+const complementaryFill = gsap.utils.random(remainingColors);
+
+function circle(x, y) {
+	let pathString = `M ${x} ${y} l 1 0 a 1 1 0 0 1 -1 1 Z`;
+	const dx = x + 0.5;
+	const dy = y + 0.5;
+
+	const ox = x + 0.4;
+	const oy = y + 0.4;
+
+	return `<g class="shape" opacity="0"><circle cx="${ox}" cy="${oy}" r="0.4" fill="${complementaryFill}" stroke="${complementaryFill}" stroke-width="0.05"/><circle cx="${dx}" cy="${dy}" r="0.4" fill="${spots}" stroke="black" stroke-width="0.05"/></g>`;
+}
+
+function triangle(x, y) {
+	const ox = x + 0.1;
+	const oy = y + 0.2;
+
+	return `<g class="shape" opacity="0"><path d="M ${x} ${y} l 1 0.5 l -1 0.5 z" stroke-linejoin="round" fill="${complementaryFill}" stroke="${complementaryFill}" stroke-width="0.05"/><path d="M ${ox} ${oy} l 1 0.5 l -1 0.5 z" stroke-linejoin="round" fill="${spots}" stroke="black" stroke-width="0.05"/></g>`;
+}
+
+let q = 0;
+for (let x = 0; x < 10; x = x + 1.7) {
+	for (let y = 0; y < 8; y = y + 1.7) {
+		if (q % 2 == 0) {
+			document.getElementById("svg").innerHTML += circle(x, y);
+		} else {
+			document.getElementById("svg").innerHTML += triangle(x, y);
+		}
+		q++;
+	}
+}
+
+gsap.set(".shape", {
+	transformOrigin: "50% 50%",
+	rotate: "random(0, 360, 5)",
+	opacity: 1
+});

@@ -22,6 +22,11 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: lovelo;
+  src: url(../../assets/style/font/Commercial/WEB/Lovelo-Black.woff);
+}
+
 :root {
   --text-color: #000;
   --bg-color: #e0e0e0;
@@ -51,24 +56,37 @@ body {
   height: 100vh;
   width: 100%;
   position: relative;
-  background-color: #ffe600;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.intro-background {
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  position: absolute;
+}
+
+.introText {
+  margin: 10%;
+}
+
 .vipul {
-  color: black;
-  font-size: 200px;
+  font-family: "lovelo", sans-serif;
+  color: #212121;
+  font-size: 20vh;
+  background-color: #9292ff;
 }
 
 .hi {
-  color: black;
-  font-size: 50px;
+  color: #fffdfd;
+  font-size: 15vh;
+  font-family: "lovelo", sans-serif;
 }
 
 .delete1 {
-  color: red;
+  color: #ea00ff;
   font-size: 40px;
 }
 
@@ -277,7 +295,7 @@ body {
   color: var(--text-color);
 }
 
-section:not(#projects) {
+section:not(#projects, #intro) {
   min-height: 100vh;
   width: 100%;
   position: relative;
@@ -301,6 +319,8 @@ section:not(#projects) {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  min-height: 800px;
+  min-width: 400px;
   border-radius: 40px;
   background: #e0e0e0;
   -webkit-box-shadow: 16px 16px 23px #b5b5b5, -16px -16px 23px #ffffff;
@@ -308,7 +328,6 @@ section:not(#projects) {
 }
 
 .projectCard:hover {
-  height: 82vh;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   background: linear-gradient(145deg, #f0f0f0, #cacaca);

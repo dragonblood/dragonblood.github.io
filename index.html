@@ -74,11 +74,24 @@
   <div class="page">
 
     <section id="intro">
+      
+      <svg class='intro-background' id="svg" viewBox="0 0 10 8" preserveAspectRatio="xMidYMid slice">
+        <pattern id="pattern-circles" x="0" y="0" width="0.1" height="0.1" patternUnits="userSpaceOnUse">
+          <rect x="0" y="0" width="100%" height="100%" fill="#fff" />
+          <circle class="spot" fill="black" cx="0.05" cy="0.05" r="0.015"></circle>
+        </pattern>
+      
+        <pattern id="pattern-stripes" x="0" y="0" width="0.6" height="0.6" patternUnits="userSpaceOnUse">
+          <rect x="0" y="0" width="100%" height="100%" fill="#fff"></rect>
+          <line x1="0.3" y1="0" x2="0.3" y2="0.6" stroke="black" stroke-width="0.05"></line>
+        </pattern>
+        <rect class="bg" x="0" y="0" width="100%" height="100%" fill="transparent" />
+      </svg>
+
       <div class="introText">
-    
-        <span class="hi">Hi I'm</span><br>
-        <h1 class="vipul">Vipul Petkar</h1>
-        <h2 class="delete1">this site is currently under developement</h2>
+        <span class="display-2 hi">Hi I'm</span><br>
+        <h1 class="display-1 vipul">Vipul Petkar</h1>
+        <!-- <h2 class="delete1">this site is currently under developement</h2> -->
     </div>
     <div>
       <img class="introimage" src="assets/images/vipul.svg" alt="">
@@ -554,7 +567,7 @@ Google Developer festival 2019.
         </div>
 
         <div class="filterDiv ml web projectCard">
-          <img class="projectImg" src="assets/images/cyborg-9.png" alt="">
+          <!-- <img class="projectImg" src="assets/images/cyborg-9.png" alt=""> -->
           <h2 class="projectHeader">Eridium</h2>
           <h4 class="projectHeader2">AI AutoDubbing</h4>
           <p class="projectPara">
@@ -702,12 +715,13 @@ Google Developer festival 2019.
           </div>
         </div>
       </div>
-      <img class="abstract_footer" src="assets/images/texture.jpg">
+      <!-- <img class="abstract_footer" src="assets/images/texture.jpg"> -->
   </section>
 
   </div>
 
   <!-- partial -->
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
   <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
   <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
@@ -716,6 +730,7 @@ Google Developer festival 2019.
   <script src="https://unpkg.com/css-doodle@0.13.9/css-doodle.min.js"></script>
 
   <script src="https://use.fontawesome.com/e556b60b6b.js"></script>
+
 
 
 </body>
