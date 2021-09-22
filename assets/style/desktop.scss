@@ -1,0 +1,559 @@
+@font-face {
+  font-family: "rz-bold";
+  src: url("https://d33wubrfki0l68.cloudfront.net/f3186e7f4b56c63f574671af3000fd4bf8c51332/49de9/fonts/rezozero/rz-bold.eot");
+  src: url("https://d33wubrfki0l68.cloudfront.net/f3186e7f4b56c63f574671af3000fd4bf8c51332/49de9/fonts/rezozero/rz-bold.eot#iefix") format('embedded-opentype'),
+       url("https://d33wubrfki0l68.cloudfront.net/a9ecebfc0a7c9a3fca8cfa77361749c23bf6f01f/c05e8/fonts/rezozero/rz-bold.woff") format('woff');
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+
+@font-face {
+  font-family: "rz-regular";
+  src: url("https://d33wubrfki0l68.cloudfront.net/a2a2e60773e19d6ee1cf922f7141a7b46d4d19cf/4264c/fonts/rezozero/rz-regular.eot");
+  src: url("https://d33wubrfki0l68.cloudfront.net/a2a2e60773e19d6ee1cf922f7141a7b46d4d19cf/4264c/fonts/rezozero/rz-regular.eot#iefix") format('embedded-opentype'),
+       url("https://d33wubrfki0l68.cloudfront.net/ced4ea2d52c6493542244e03056e72e24efa2020/de4df/fonts/rezozero/rz-regular.woff") format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: lovelo;
+  src: url(../../assets/style/font/Lovelo-Black.woff);
+}
+
+
+:root {
+  --text-color: #000;
+  --bg-color: #e0e0e0;
+
+  --border-size: 0.125rem;
+  --duration: 250ms;
+  --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --color-primary: #e0e0e0;
+  --color-secondary: black;
+  --color-tertiary: dodgerblue;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --space: 1rem;
+}
+
+body {
+  font-family: "termina", sans-serif;
+  color: var(--text-color);
+  background: var(--bg-color);
+  transition: 0.3s ease-out;
+  overflow-x: hidden;
+  // max-width: 100%;
+  // width: 100%;
+  width: unset;
+  overscroll-behavior: none;
+}
+/* ###################################################||INTRO||############################################################# */
+
+#intro{
+  height:100vh;
+  width:100%;
+  position: relative;
+  // background-color: #d74e68;
+  // background: linear-gradient(to 145deg, #000000 0%, #ffffff 100%);
+  // background-image: url("https://www.fontfabric.com/wp-content/uploads/2021/03/cn-hero-1.png");
+  // background-repeat: no-repeat;
+  // animation: random 20s infinite;
+  display: flex;
+}
+
+.intro-background {
+	height: 100vh;
+	width: 100vw;
+  z-index: -1;
+  position: absolute;
+}
+
+.introText{
+  margin: 10%;
+}
+
+.vipul {
+  font-family: "lovelo", sans-serif;
+  color: #212121;
+  font-size: 20vh;
+  background-color: #9292ff;
+}
+
+.hi { 
+  color: #fffdfd;
+  font-size: 15vh;
+  font-family: "lovelo", sans-serif;
+}
+
+.delete1 { 
+  color: rgb(234, 0, 255);
+  font-size: 40px;
+}
+
+.introimage{
+  height: 40%;
+  position: absolute;
+  // opacity: 0.5;
+  right: 10%;
+  bottom: 1%;
+}
+
+
+/* ###################################################||ABOUT ME||############################################################# */
+
+#aboutMe{
+  height:100vh;
+  width:100%;
+  position: relative;
+  // display: flex;
+}
+
+.aboutMeImages{
+  // display: flex;
+}
+
+.headphones{
+ position: absolute;
+ left: 30px;
+ top: -110px;
+ height: 200px;
+ transform: rotate(-45deg)
+
+}
+
+.about_me_text_heading{
+  font-size: 25px;
+}
+
+.about_me_text_para{
+  text-align: justify;
+}
+
+.myphotos{
+  height: 200px;
+}
+
+/* ###################################################||ACHIVEMENTS||############################################################# */
+
+#achievements{
+  background-color:#363636;
+	font-family: 'Open Sans', sans-serif;
+	font-family: "Tahoma";
+	user-select: none;
+	width:100%;
+	height: max-content;
+	// text-align: center;
+	position: relative;
+  z-index: -2;
+}
+
+.achivementsHeading{
+  color:#ffffff;
+  font-weight: 1000;
+  font-size: 100px;
+  font-family: 'Open Sans', sans-serif;
+	font-family: "Tahoma";
+}
+
+#achivementCardbox {
+	display: flex;
+	margin: auto;
+  right: 0%;
+  // flex-direction: row-reverse;
+  z-index: 2;
+  }
+  
+.achivementCard {
+display: flex;
+height: 300px;
+width: 200px;
+background-color: #525252;
+border-radius: 10px;
+box-shadow: -1rem 0 3rem #000;
+transition: 0.4s ease-out;
+position: relative;
+left: 0px;
+}
+
+.achivementCard:not(:first-child) {
+    margin-left: -50px;
+}
+
+.achivementCard:hover {
+transform: translateY(-50px);
+transition: 0.4s ease-out;
+}
+
+.achivementCard:hover ~ .achivementCard {
+position: relative;
+left: 50px;
+transition: 0.4s ease-out;
+}
+
+.title {
+color: white;
+font-weight: 300;
+position: absolute;
+left: 20px;
+top: 15px;
+}
+
+.bar {
+position: absolute;
+top: 100px;
+left: 20px;
+height: 5px;
+width: 150px;
+}
+
+.emptybar {
+background-color: #000000;
+width: 100%;
+height: 100%;
+}
+
+.filledbar {
+position: absolute;
+top: 0px;
+z-index: 3;
+width: 0px;
+height: 100%;
+background: red;
+transition: 0.6s ease-out;
+}
+
+.achivementCard:hover .filledbar {
+width: 120px;
+transition: 0.4s ease-out;
+}
+  
+  @-webkit-keyframes slidein {
+	0% {
+	  top: -400px;
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	  top: 0px;
+	}
+  }
+  @keyframes slidein {
+	0% {
+	  top: -400px;
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	  top: 0px;
+	}
+  }
+  @-webkit-keyframes slideout {
+	0% {
+	  top: 0;
+	  opacity: 1;
+	}
+	100% {
+	  top: -400px;
+	  opacity: 0;
+	}
+  }
+  @keyframes slideout {
+	0% {
+	  top: 0;
+	  opacity: 1;
+	}
+	100% {
+	  top: -400px;
+	  opacity: 0;
+	}
+  }
+
+  .achievement-list{
+    color: var(--bg-color);
+    font-family: 'rz-regular';
+    font-size: medium;
+  }
+
+/* ###################################################||PROJECTS||############################################################# */
+#projects {
+  height: max-content;
+  // overflow: hidden;
+  display: flex;
+  left: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+section:not(#projects, #intro) {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  padding: 50px 10vw;
+  margin: auto;
+
+}
+
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.projectCard{
+  margin: 0 30px 0 30px;
+  height: fit-content;
+  min-height: 800px;
+  min-width: 400px;
+  border-radius: 40px;
+  background: #e0e0e0;
+  box-shadow:  16px 16px 23px #b5b5b5,
+             -16px -16px 23px #ffffff;
+
+}
+
+.projectCard:hover{
+  // height: 82vh;
+  transition-duration: 1s;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow:  17px 17px 34px #b5b5b5,
+               -17px -17px 34px #ffffff;
+}
+
+.projectImg {
+  height: 40%;
+  width: 30vw;
+  border-radius: 50px 50px 0 0;
+}
+
+.projectHeader {
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 400;
+  margin: 1rem;
+  font-family: 'rz-regular';
+  // position: absolute;
+  // top: 10vw;
+  // left: 10vw;
+  z-index: 4;
+  overflow-wrap: break-word;
+  hyphens: auto;
+
+  @media (max-width: 768px) {
+    font-size: 16vw;
+  }
+
+  span {
+    display: block;
+  }
+}
+
+.projectPara{
+  padding-left:40px;
+  padding-right:40px;
+  text-align: justify;
+}
+
+.credit {
+  font-family: Termina, sans-serif;
+  a {
+    color: var(--text-color);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.project-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 10vw;
+
+  & > * {
+    min-width: 30vw;
+  }
+}
+
+.multi-button {
+  display: flex;
+  text-align: center;
+}
+
+.multi-button .submit_btn {
+  border-radius: 15px;
+  margin-top: 10%;
+  flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  padding:
+      calc(var(--space) / 1.125)
+      var(--space)
+      var(--space);
+  border: var(--border-size) solid black;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  font-size: 1.5rem;
+  font-family: var(--font-family);
+  text-transform: lowercase;
+  text-shadow: var(--shadow) 2px 2px;
+  transition: flex-grow var(--duration) var(--ease);
+}
+
+.multi-button .submit_btn + .submit_btn {
+  border-left: var(--border-size) solid black;
+  margin-left: calc(var(--border-size) * -1);
+}
+
+.multi-button .submit_btn:hover,
+.multi-button .submit_btn:focus {
+  flex-grow: 2;
+  color: white;
+  outline: none;
+  text-shadow: none;
+  background-color: var(--color-secondary);
+}
+
+.multi-button .submit_btn:focus {
+  outline: var(--border-size) dashed var(--color-primary);
+  outline-offset: calc(var(--border-size) * -3);
+}
+
+.multi-button:hover .submit_btn:focus:not(:hover) {
+  flex-grow: 1;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  outline-color: var(--color-tertiary);
+}
+
+.multi-button .submit_btn:active {
+  transform: translateY(var(--border-size));
+}
+
+/* ###################################################||CONTACT||############################################################ */
+#contact{
+  background: var(--text-color);
+  color: #D5D9CC;
+}
+
+.contact-container{
+  padding-left: auto;
+  padding-right: auto;
+  width: 70%;
+  padding-top: 20px;
+}
+
+
+.contact-header{
+  font-family: "rz-bold";
+  font-size: 150px;
+  padding: 5%;
+
+}
+
+.contact-header-text{
+  padding-bottom:10%;
+}
+
+.contact-links-header{
+  font-family: "rz-bold";
+  font-size: 30px;
+  padding-top: 6%;
+  padding-left: 1%;
+  padding-bottom: 1%;
+}
+
+.contact-links-para{
+  font-family: "maison-neue-mono";
+  font-size: 30px;
+  color:#fff;
+  
+}
+ 
+.contact-links{}
+
+
+.first-row-social{}
+.second-row-social{}
+
+
+.github-btn{
+  text-decoration: none;
+  color: #fff;
+}  
+
+.github-btn:hover {
+  text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.codepen-btn{
+  text-decoration: none;
+  color: #fff;
+}  
+
+.codepen-btn:hover {
+  text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.facebook-btn{
+  text-decoration: none;
+  color: #fff;
+}  
+
+.facebook-btn:hover {
+  text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.youtube-btn{
+  text-decoration: none;
+  color: #fff;
+}  
+
+.youtube-btn:hover {
+  text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.twitter-btn{
+  text-decoration: none;
+  color: #fff;
+}  
+
+.twitter-btn:hover {
+  text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.linkedin-btn{
+  text-decoration: none;
+  color: #fff;
+}  
+
+.linkedin-btn:hover {
+  text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.abstract_footer{
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  height: 500px;
+  transform: rotate(90deg);
+}
