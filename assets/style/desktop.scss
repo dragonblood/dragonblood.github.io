@@ -1,3 +1,7 @@
+@import url(https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css);
+@import url(https://use.typekit.net/skn8ash.css);
+@import url(https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css);
+
 @font-face {
   font-family: "rz-bold";
   src: url("https://d33wubrfki0l68.cloudfront.net/f3186e7f4b56c63f574671af3000fd4bf8c51332/49de9/fonts/rezozero/rz-bold.eot");
@@ -6,8 +10,6 @@
   font-style: normal;
   font-weight: bold;
 }
-
-
 
 @font-face {
   font-family: "rz-regular";
@@ -18,16 +20,9 @@
   font-weight: normal;
 }
 
-@font-face {
-  font-family: lovelo;
-  src: url(../../assets/style/font/Lovelo-Black.woff);
-}
-
-
 :root {
   --text-color: #000;
   --bg-color: #e0e0e0;
-
   --border-size: 0.125rem;
   --duration: 250ms;
   --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -55,11 +50,6 @@ body {
   height:100vh;
   width:100%;
   position: relative;
-  // background-color: #d74e68;
-  // background: linear-gradient(to 145deg, #000000 0%, #ffffff 100%);
-  // background-image: url("https://www.fontfabric.com/wp-content/uploads/2021/03/cn-hero-1.png");
-  // background-repeat: no-repeat;
-  // animation: random 20s infinite;
   display: flex;
 }
 
@@ -75,7 +65,7 @@ body {
 }
 
 .vipul {
-  font-family: "lovelo", sans-serif;
+  font-family: "rz-regular", sans-serif;
   color: #212121;
   font-size: 20vh;
   background-color: #9292ff;
@@ -84,12 +74,7 @@ body {
 .hi { 
   color: #fffdfd;
   font-size: 15vh;
-  font-family: "lovelo", sans-serif;
-}
-
-.delete1 { 
-  color: rgb(234, 0, 255);
-  font-size: 40px;
+  font-family: "rz-regular", sans-serif;
 }
 
 .introimage{
@@ -125,6 +110,7 @@ body {
 
 .about_me_text_heading{
   font-size: 25px;
+  font-family: "rz-bold", sans-serif;
 }
 
 .about_me_text_para{
@@ -153,8 +139,7 @@ body {
   color:#ffffff;
   font-weight: 1000;
   font-size: 100px;
-  font-family: 'Open Sans', sans-serif;
-	font-family: "Tahoma";
+  font-family: 'rz-Bold', sans-serif;
 }
 
 #achivementCardbox {

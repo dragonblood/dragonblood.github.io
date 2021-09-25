@@ -1,3 +1,6 @@
+@import url(https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css);
+@import url(https://use.typekit.net/skn8ash.css);
+@import url(https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css);
 @font-face {
   font-family: "rz-bold";
   src: url("https://d33wubrfki0l68.cloudfront.net/f3186e7f4b56c63f574671af3000fd4bf8c51332/49de9/fonts/rezozero/rz-bold.eot");
@@ -12,11 +15,6 @@
   src: url("https://d33wubrfki0l68.cloudfront.net/a2a2e60773e19d6ee1cf922f7141a7b46d4d19cf/4264c/fonts/rezozero/rz-regular.eot#iefix") format("embedded-opentype"), url("https://d33wubrfki0l68.cloudfront.net/ced4ea2d52c6493542244e03056e72e24efa2020/de4df/fonts/rezozero/rz-regular.woff") format("woff");
   font-style: normal;
   font-weight: normal;
-}
-
-@font-face {
-  font-family: lovelo;
-  src: url(../../assets/style/font/Lovelo-Black.woff);
 }
 
 :root {
@@ -65,7 +63,7 @@ body {
 }
 
 .vipul {
-  font-family: "lovelo", sans-serif;
+  font-family: "rz-regular", sans-serif;
   color: #212121;
   font-size: 20vh;
   background-color: #9292ff;
@@ -74,12 +72,7 @@ body {
 .hi {
   color: #fffdfd;
   font-size: 15vh;
-  font-family: "lovelo", sans-serif;
-}
-
-.delete1 {
-  color: #ea00ff;
-  font-size: 40px;
+  font-family: "rz-regular", sans-serif;
 }
 
 .introimage {
@@ -107,6 +100,7 @@ body {
 
 .about_me_text_heading {
   font-size: 25px;
+  font-family: "rz-bold", sans-serif;
 }
 
 .about_me_text_para {
@@ -138,8 +132,7 @@ body {
   color: #ffffff;
   font-weight: 1000;
   font-size: 100px;
-  font-family: 'Open Sans', sans-serif;
-  font-family: "Tahoma";
+  font-family: 'rz-Bold', sans-serif;
 }
 
 #achivementCardbox {
