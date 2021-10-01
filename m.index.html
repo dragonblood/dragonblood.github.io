@@ -6,84 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vipul Petkar</title>
 
-    <!-- Favicon -->
     <link rel="stylesheet" href="assets/style/mobile.css">
     <link rel="stylesheet" href="assets/style/neumorphism.css">
+
+    <script src="https://use.fontawesome.com/e556b60b6b.js"></script>
+
+    <script src="assets/js/neumorphism.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"><link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
     <section id="intro">
         <div class="hi">
-            <h1 class="hi">Hi, I'm </h1>
+            <h2 class="hi">Hi, I'm </h2>
             <h1 class="vipul">Vipul Petkar</h1>
-            <h2>Web Developer</h2>
+            <h2 class="sub">Web Developer</h2>
         </div>
         <div class="introimage">
-            <img src="assets/images/vipul.svg" alt="Vipul Petkar">
+            <img src="assets/images/vipul.svg" alt="Vipul Petkar" style="height: 400px; position: absolute; right: 20px; bottom:10px">
         </div>
     </section>
 
     <section id="about">
-        <!-- Title -->
-        <div class="row">
-            <div class="col text-center">
-                <div class="my-5">
-                    <span class="h5 text-center">Accordion with icons</span>
-                </div>
+        <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 text-center mb-4 mb-lg-5">
+                <h2 class="display-3 mb-4">About Me</h2>
+                <!-- <p class="lead">Have a question? Read through our FAQ below. If you can't find an answer,<br class="d-none d-lg-inline-block">please email our support team. We're here to help.</p> -->
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8">
+            <div class="col-12 col-md-10">
                 <!--Accordion-->
-                <div class="accordion shadow-soft rounded">
-                    <div class="card card-sm card-body bg-primary border-light mb-0">
-                        <a href="#panel-4" data-target="#panel-4" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
-                            <span class="icon-title h6 mb-0 font-weight-bold"><span class="fab fa-leanpub"></span>Our
-                                Company</span>
-                            <span class="icon"><span class="fas fa-plus"></span></span>
-                        </a>
-                        <div class="collapse" id="panel-4">
-                            <div class="pt-3">
-                                <p class="mb-0">
-                                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also
-                                    helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card card-sm card-body bg-primary border-light mb-0">
-                        <a href="#panel-5" data-target="#panel-5" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
-                            <span class="icon-title h6 mb-0 font-weight-bold"><span class="fas fa-box-open"></span>Pixel
-                                Components</span>
-                            <span class="icon"><span class="fas fa-plus"></span></span>
-                        </a>
-                        <div class="collapse" id="panel-5">
-                            <div class="pt-3">
-                                <p class="mb-0">
-                                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also
-                                    helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card card-sm card-body bg-primary border-light mb-0">
-                        <a href="#panel-6" data-target="#panel-6" class="accordion-panel-header" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="panel-1">
-                            <span class="icon-title h6 mb-0 font-weight-bold"><span class="fas fa-donate"></span>Licenses</span>
-                            <span class="icon"><span class="fas fa-plus"></span></span>
-                        </a>
-                        <div class="collapse" id="panel-6">
-                            <div class="pt-3">
-                                <p class="mb-0">
-                                    At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also
-                                    helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="accordion" id="accordionExample"></div>
                 <!--End of Accordion-->
             </div>
+        </div>
+        </div>
+        <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+            <!--Accordion-->
+            <div class="accordion shadow-soft rounded">
+                <div class="card border-light mb-0">
+                    <div class="card-header" id="headingOne">
+                    <h2 class="mb-0"><button class="btn btn-link btn-block d-flex justify-content-between text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="h6 mb-0 font-weight-bold">What is the purpose of a FAQ?</span> <span class="icon"><span class="fas fa-plus"></span></span></button></h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p class="mb-0">At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="card border-light mb-0">
+                    <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0"><button class="btn btn-link btn-block d-flex justify-content-between text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span class="h6 mb-0 font-weight-bold">What is a FAQ document?</span> <span class="icon"><span class="fas fa-plus"></span></span></button></h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p class="mb-0">At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="card border-light mb-0">
+                    <div class="card-header" id="headingThree">
+                    <h2 class="mb-0"><button class="btn btn-link btn-block d-flex justify-content-between text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="h6 mb-0 font-weight-bold">What are the top 10 interview questions?</span> <span class="icon"><span class="fas fa-plus"></span></span></button></h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p class="mb-0">At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="card border-light mb-0">
+                    <div class="card-header" id="headingFour">
+                    <h2 class="mb-0"><button class="btn btn-link btn-block d-flex justify-content-between text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span class="h6 mb-0 font-weight-bold">Cookies?</span> <span class="icon"><span class="fas fa-plus"></span></span></button></h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p class="mb-0">At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="card border-light mb-0">
+                    <div class="card-header" id="headingFive">
+                    <h2 class="mb-0"><button class="btn btn-link btn-block d-flex justify-content-between text-left" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><span class="h6 mb-0 font-weight-bold">Copyright Notice</span> <span class="icon"><span class="fas fa-plus"></span></span></button></h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p class="mb-0">At Themesberg, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow. We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of Accordion-->
+        </div>
         </div>
     </section>
     
     <section id="skills">
+        <div>
+            <!-- Place <div> tag where you want the feed to appear -->
+            <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+            <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+            <script type="text/javascript">
+              /* curator-feed-default-feed-layout */
+              (function(){
+              var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+              i.src = "https://cdn.curator.io/published/0bab364b-4fc1-415f-86b2-3f059fd41d11.js";
+              e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+              })();
+            </script>
+          </div>
     </section>
 
     <section id="projects">
@@ -110,7 +151,125 @@
     </section>
 
     <section id="contact">
+
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>Find us</h4>
+                                    <span>Nagpur, MH, India</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Call us</h4>
+                                    <span>+918999540311</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4>Mail us</h4>
+                                    <span>Petkar.vipul@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="assets/images/X.png" class="img-fluid" alt="logo" style="height:100px;"></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                    elit,Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <!-- <div class="footer-social-icon">
+                                    <span>Follow us</span>
+                                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="row second-row-social">
+                            <div class="col-md-12">
+                              <h2 class="contact-links-header">
+                                Code
+                              </h2>
+                              <p class="contact-links-para">
+                                <a href="https://github.com/dragonblood"><span aria-hidden="false" class="fa fa-github-square github-btn"></span></a>
+                                <a href="https://codepen.io/dragonblood"><span aria-hidden="false" class="fa fa-codepen codepen-btn"></span></a>
+                                <a href="https://www.qwiklabs.com/public_profiles/8c417c5d-2e1e-4a03-be6d-06b107a56708 "><span aria-hidden="false" class="fa fa-facebook-square facebook-btn"></span></a> 
+                              </p>
+                            </div>
+                            <div class="col-md-12">
+                              <h2 class="contact-links-header">
+                                social media
+                              </h2>
+                              <p class="contact-links-para">
+                                <a href="https://www.youtube.com/channel/UCoAPGzKCfSgINLNQEzDcUqQ"><span aria-hidden="false" class="fa fa-youtube-play youtube-btn"></span></a>
+                                <a href="https://twitter.com/vipulesque"><span aria-hidden="false" class="fa fa-twitter-square twitter-btn"></span></a>
+                                <a href="https://www.linkedin.com/in/vipul-petkar"><span aria-hidden="false" class="fa fa-linkedin-square linkedin-btn"></span></a>
+                              </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Subscribe</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                </div>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Email Address">
+                                        <button><i class="fab fa-telegram-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                            <div class="copyright-text">
+                                <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </section>
+
 
     <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
     <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
@@ -121,9 +280,7 @@
     <script src="https://unpkg.com/css-doodle@0.13.9/css-doodle.min.js"></script>
   
     <script src="https://use.fontawesome.com/e556b60b6b.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
 
 </body>
 </html>

@@ -25,14 +25,15 @@
   --border-size: 0.125rem;
   --duration: 250ms;
   --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
-  --dark: #212121;
+  --dark: #272727;
   --color-tertiary: dodgerblue;
+  --color-secondary: #8b54e4;
   --shadow: rgba(0, 0, 0, 0.1);
   --space: 1rem;
 }
 
 body {
-  font-family: "termina", sans-serif;
+  font-family: "rz-regular", sans-serif !important;
   color: var(--text-color);
   background: var(--bg-color);
   -webkit-transition: 0.3s ease-out;
@@ -43,7 +44,7 @@ body {
 }
 
 #intro {
-  background: #8b54e4;
+  background: var(--color-secondary);
   height: 100vh;
   width: 100%;
 }
@@ -51,18 +52,11 @@ body {
 .hi {
   color: #fffdfd;
   font-size: 7vh;
-  font-family: "rz-regular", sans-serif;
 }
 
 .vipul {
-  font-family: "rz-regular", sans-serif;
   color: #212121;
   font-size: 10vh;
-}
-
-.introimage {
-  height: 40%;
-  position: absolute;
 }
 
 #about {
@@ -85,5 +79,220 @@ body {
   background: var(--dark);
   height: 100vh;
   width: 100%;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+
+.single-cta i {
+  color: var(--color-secondary);
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  max-width: 200px;
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: var(--color-secondary);
+}
+
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover {
+  color: var(--color-secondary);
+}
+
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: var(--color-secondary);
+  padding: 13px 20px;
+  border: 1px solid var(--color-secondary);
+  top: 0;
+}
+
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+}
+
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+
+.copyright-text p a {
+  color: var(--color-secondary);
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+  color: var(--color-secondary);
+}
+
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+.github-btn {
+  text-decoration: none;
+  color: #fff;
+}
+
+.github-btn:hover {
+  text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.codepen-btn {
+  text-decoration: none;
+  color: #fff;
+}
+
+.codepen-btn:hover {
+  text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.facebook-btn {
+  text-decoration: none;
+  color: #fff;
+}
+
+.facebook-btn:hover {
+  text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.youtube-btn {
+  text-decoration: none;
+  color: #fff;
+}
+
+.youtube-btn:hover {
+  text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.twitter-btn {
+  text-decoration: none;
+  color: #fff;
+}
+
+.twitter-btn:hover {
+  text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.linkedin-btn {
+  text-decoration: none;
+  color: #fff;
+}
+
+.linkedin-btn:hover {
+  text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
+  color: #fff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=mobile.css.map */
