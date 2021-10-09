@@ -1,3 +1,16 @@
+$text-color: #000000;
+$bg-color: #e0e0e0;
+$dark: #333333;
+$color-tertiary: dodgerblue;
+$color-secondary: #8b54e4;
+
+$shadow: rgba(0, 0, 0, 0.1);
+$space: 1rem;
+$border-size: 0.125rem;
+$duration: 250ms;
+$ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+
 @import "neumorphism.css";
 
 @font-face {
@@ -21,23 +34,11 @@
   .desktop{
       display: none;
   }
-  :root {
-    --text-color: #000;
-    --bg-color: #e0e0e0;
-    --border-size: 0.125rem;
-    --duration: 250ms;
-    --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
-    --dark: #272727;
-    --color-tertiary: dodgerblue;
-    --color-secondary: #8b54e4;
-    --shadow: rgba(0, 0, 0, 0.1);
-    --space: 1rem;
-  }
   
   body {
     font-family: "rz-regular", sans-serif !important;
-    color: var(--text-color);
-    background: var(--bg-color);
+    color: $text-color;
+    background: $bg-color;
     transition: 0.3s ease-out;
     overflow-x: hidden;
     // max-width: 100%;
@@ -47,18 +48,18 @@
   }
 
 #intro{
-    background: var(--color-secondary);
+    background: $color-secondary;
     height:100vh;
     width:100%;
 }
 
 .hi{ 
-    color: #fffdfd;
+  color: $bg-color;
     font-size: 7vh;
 }
 
 .vipul{
-    color: #212121;
+  color: $text-color;
     font-size: 10vh;
 }
 
@@ -66,22 +67,29 @@
 #about{
     height:100vh;
     width:100%;
+    background-color: $dark;
 }
 
+
 #skills{
-    background: var(--dark);
+    color: $text-color;
     height:100vh;
     width:100%;
     
 }
 
 #projects{
-    height:100vh;
+    // height:100vh;
     width:100%;
 }
- 
+
+.btn-sm{
+    margin-left: 20px !important;
+}
+
 #contact{
-    background: var(--dark);
+    background: $text-color;
+    color: $bg-color;
     height:100vh;
     width:100%;
 }
@@ -91,15 +99,11 @@ ul {
     padding: 0px;
 }
 
-// .footer-section {
-//   background: #151414;
-//   position: relative;
-// }
 .footer-cta {
   border-bottom: 1px solid #373636;
 }
 .single-cta i {
-  color: var(--color-secondary);
+  color: $color-secondary;
   font-size: 30px;
   float: left;
   margin-top: 8px;
@@ -145,6 +149,7 @@ ul {
 
 .footer-widget-heading h3 {
   color: #fff;
+  // padding-left: 15px;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 40px;
@@ -157,7 +162,8 @@ ul {
   bottom: -15px;
   height: 2px;
   width: 50px;
-  background: var(--color-secondary);
+  // margin-left: 30px;
+  background: $color-secondary;
 }
 .footer-widget ul li {
   display: inline-block;
@@ -166,7 +172,7 @@ ul {
   margin-bottom: 12px;
 }
 .footer-widget ul li a:hover{
-  color: var(--color-secondary);
+  color: $color-secondary;
 }
 .footer-widget ul li a {
   color: #878787;
@@ -186,9 +192,9 @@ ul {
 .subscribe-form button {
     position: absolute;
     right: 0;
-    background: var(--color-secondary);
+    background: $color-secondary;
     padding: 13px 20px;
-    border: 1px solid var(--color-secondary);
+    border: 1px solid $color-secondary;
     top: 0;
 }
 .subscribe-form button i {
@@ -196,93 +202,74 @@ ul {
   font-size: 22px;
   transform: rotate(-6deg);
 }
-// .copyright-area{
-//   background: #202020;
-//   padding: 25px 0;
-// }
 .copyright-text p {
   margin: 0;
   font-size: 14px;
   color: #878787;
 }
 .copyright-text p a{
-  color: var(--color-secondary);
+  color: $color-secondary;
 }
 .footer-menu li {
   display: inline-block;
-  margin-left: 20px;
+  // margin-left: 20px;
 }
 .footer-menu li:hover a{
-  color: var(--color-secondary);
+  color: $color-secondary;
 }
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
 }
-
-
 .github-btn{
-    text-decoration: none;
-    color: #fff;
-  }  
-  
-  .github-btn:hover {
-    text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .codepen-btn{
-    text-decoration: none;
-    color: #fff;
-  }  
-  
-  .codepen-btn:hover {
-    text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .facebook-btn{
-    text-decoration: none;
-    color: #fff;
-  }  
-  
-  .facebook-btn:hover {
-    text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .youtube-btn{
-    text-decoration: none;
-    color: #fff;
-  }  
-  
-  .youtube-btn:hover {
-    text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .twitter-btn{
-    text-decoration: none;
-    color: #fff;
-  }  
-  
-  .twitter-btn:hover {
-    text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .linkedin-btn{
-    text-decoration: none;
-    color: #fff;
-  }  
-  
-  .linkedin-btn:hover {
-    text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
-    color: #fff;
-    text-decoration: none;
-  }
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px !important;
+  margin-bottom: 14px;
+  // margin-left: 20px;
+}  
+
+.codepen-btn{
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px !important;
+  margin-bottom: 14px;
+  margin-left: 20px;
+}
+
+.facebook-btn{
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px !important;
+  margin-bottom: 14px;
+  margin-left: 20px;
+}
+
+.youtube-btn{
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px !important;
+  margin-bottom: 14px;
+  // margin-left: 20px;
+}
+
+.twitter-btn{
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px !important;
+  margin-bottom: 14px;
+  margin-left: 20px;
+}
+
+.linkedin-btn{
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px !important;
+  margin-bottom: 14px;
+  margin-left: 20px;
+}
+.second-row-social{
+  //margin-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}

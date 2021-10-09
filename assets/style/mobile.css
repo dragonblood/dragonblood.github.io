@@ -19,23 +19,10 @@
   display: none;
 }
 
-:root {
-  --text-color: #000;
-  --bg-color: #e0e0e0;
-  --border-size: 0.125rem;
-  --duration: 250ms;
-  --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
-  --dark: #272727;
-  --color-tertiary: dodgerblue;
-  --color-secondary: #8b54e4;
-  --shadow: rgba(0, 0, 0, 0.1);
-  --space: 1rem;
-}
-
 body {
   font-family: "rz-regular", sans-serif !important;
-  color: var(--text-color);
-  background: var(--bg-color);
+  color: #000000;
+  background: #e0e0e0;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
   overflow-x: hidden;
@@ -44,39 +31,44 @@ body {
 }
 
 #intro {
-  background: var(--color-secondary);
+  background: #8b54e4;
   height: 100vh;
   width: 100%;
 }
 
 .hi {
-  color: #fffdfd;
+  color: #e0e0e0;
   font-size: 7vh;
 }
 
 .vipul {
-  color: #212121;
+  color: #000000;
   font-size: 10vh;
 }
 
 #about {
   height: 100vh;
   width: 100%;
+  background-color: #333333;
 }
 
 #skills {
-  background: var(--dark);
+  color: #000000;
   height: 100vh;
   width: 100%;
 }
 
 #projects {
-  height: 100vh;
   width: 100%;
 }
 
+.btn-sm {
+  margin-left: 20px !important;
+}
+
 #contact {
-  background: var(--dark);
+  background: #000000;
+  color: #e0e0e0;
   height: 100vh;
   width: 100%;
 }
@@ -91,7 +83,7 @@ ul {
 }
 
 .single-cta i {
-  color: var(--color-secondary);
+  color: #8b54e4;
   font-size: 30px;
   float: left;
   margin-top: 8px;
@@ -158,7 +150,7 @@ ul {
   bottom: -15px;
   height: 2px;
   width: 50px;
-  background: var(--color-secondary);
+  background: #8b54e4;
 }
 
 .footer-widget ul li {
@@ -169,7 +161,7 @@ ul {
 }
 
 .footer-widget ul li a:hover {
-  color: var(--color-secondary);
+  color: #8b54e4;
 }
 
 .footer-widget ul li a {
@@ -193,9 +185,9 @@ ul {
 .subscribe-form button {
   position: absolute;
   right: 0;
-  background: var(--color-secondary);
+  background: #8b54e4;
   padding: 13px 20px;
-  border: 1px solid var(--color-secondary);
+  border: 1px solid #8b54e4;
   top: 0;
 }
 
@@ -213,16 +205,15 @@ ul {
 }
 
 .copyright-text p a {
-  color: var(--color-secondary);
+  color: #8b54e4;
 }
 
 .footer-menu li {
   display: inline-block;
-  margin-left: 20px;
 }
 
 .footer-menu li:hover a {
-  color: var(--color-secondary);
+  color: #8b54e4;
 }
 
 .footer-menu li a {
@@ -233,66 +224,54 @@ ul {
 .github-btn {
   text-decoration: none;
   color: #fff;
-}
-
-.github-btn:hover {
-  text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
-  color: #fff;
-  text-decoration: none;
+  font-size: 40px !important;
+  margin-bottom: 14px;
 }
 
 .codepen-btn {
   text-decoration: none;
   color: #fff;
-}
-
-.codepen-btn:hover {
-  text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
-  color: #fff;
-  text-decoration: none;
+  font-size: 40px !important;
+  margin-bottom: 14px;
+  margin-left: 20px;
 }
 
 .facebook-btn {
   text-decoration: none;
   color: #fff;
-}
-
-.facebook-btn:hover {
-  text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
-  color: #fff;
-  text-decoration: none;
+  font-size: 40px !important;
+  margin-bottom: 14px;
+  margin-left: 20px;
 }
 
 .youtube-btn {
   text-decoration: none;
   color: #fff;
-}
-
-.youtube-btn:hover {
-  text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
-  color: #fff;
-  text-decoration: none;
+  font-size: 40px !important;
+  margin-bottom: 14px;
 }
 
 .twitter-btn {
   text-decoration: none;
   color: #fff;
-}
-
-.twitter-btn:hover {
-  text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
-  color: #fff;
-  text-decoration: none;
+  font-size: 40px !important;
+  margin-bottom: 14px;
+  margin-left: 20px;
 }
 
 .linkedin-btn {
   text-decoration: none;
   color: #fff;
+  font-size: 40px !important;
+  margin-bottom: 14px;
+  margin-left: 20px;
 }
 
-.linkedin-btn:hover {
-  text-shadow: 0px 0px 40px #ffffff, 0 0 10px #7373ff;
-  color: #fff;
-  text-decoration: none;
+.second-row-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=mobile.css.map */
