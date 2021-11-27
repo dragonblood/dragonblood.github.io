@@ -7,10 +7,10 @@
     </body>
 
     <script>
-    alert(window.opener.document.thisItem.getProperty("candidateDict"));
 
-    var obj = candidateDict;
-    // [{    "Name": "屠",    "Experience": 1  }, {    "Name": "阎",    "Experience": 2  }, {    "Name": "颜",    "Experience": 3  }, {    "Name": "蓬",    "Experience": 4  }, {    "Name": "翁",    "Experience": 5  }, {    "Name": "荆",    "Experience": 6  }, {    "Name": "蔡",    "Experience": 7  }, {    "Name": "盍",    "Experience": 8  }, {    "Name": "闻",    "Experience": 9  }, {    "Name": "陶",    "Experience": 10  }];
+    alert(document.thisItem.getProperty("candidateDict"));
+
+    var obj = [{    "Name": "屠",    "Experience": 1  }, {    "Name": "阎",    "Experience": 2  }, {    "Name": "颜",    "Experience": 3  }, {    "Name": "蓬",    "Experience": 4  }, {    "Name": "翁",    "Experience": 5  }, {    "Name": "荆",    "Experience": 6  }, {    "Name": "蔡",    "Experience": 7  }, {    "Name": "盍",    "Experience": 8  }, {    "Name": "闻",    "Experience": 9  }, {    "Name": "陶",    "Experience": 10  }];
     
     var table = document.createElement('table');
 
