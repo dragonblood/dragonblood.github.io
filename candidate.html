@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <html>
+    <body>
+        <h1>Candidates Data</h1>
+        <div id="showData"></div>
+
+
+        <iframe class="aras-dialog__iframe" src="http://127.0.0.1:5500/candidate.html" autofocus=""></iframe>
+          
+    </body>
+
+    <script>
+
+    var obj = [{    "Name": "屠",    "Experience": 1  }, {    "Name": "阎",    "Experience": 2  }, {    "Name": "颜",    "Experience": 3  }, {    "Name": "蓬",    "Experience": 4  }, {    "Name": "翁",    "Experience": 5  }, {    "Name": "荆",    "Experience": 6  }, {    "Name": "蔡",    "Experience": 7  }, {    "Name": "盍",    "Experience": 8  }, {    "Name": "闻",    "Experience": 9  }, {    "Name": "陶",    "Experience": 10  }];
+    
+    var table = document.createElement('table');
+
+    // header
+    var headerRow = table.insertRow(0);
+    var headerCell = headerRow.insertCell(0);
+    headerCell.innerHTML = "Name";
+    headerCell = headerRow.insertCell(1);
+    headerCell.innerHTML = "Experience";
+
+    var tr = table.insertRow(-1);
+
+
+    function iterate(obj,table,tr){
+
+        for(var props in obj){
+
+
+            if(obj.hasOwnProperty(props)){
+
+                if(typeof obj[props]=='object')
+                    {
+                        var trNext = table.insertRow(-1);
+                        var tabCell = trNext.insertCell(-1);
+                        var table_in = document.createElement('table'); 
+                        var tr_in;
+
+                        tabCell.appendChild(table_in)
+                        iterate(obj[props],table_in,tr_in);
+                    }
+                else
+                    {
+                        if(tr === undefined)
+                        {
+                            tr = table.insertRow(-1);
+                        }
+                        var tabCell = tr.insertCell(-1);
+                        console.log(props+' * '+obj[props]);
+                        tabCell.innerHTML = obj[props];
+                    }
+
+            }
+        }
+    }
+
+    iterate(obj,table,tr);
+
+    var divContainer = document.getElementById("showData");
+            divContainer.innerHTML = "";
+            divContainer.appendChild(table);
+
+    
+    </script>
+    </html>

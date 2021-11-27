@@ -342,16 +342,16 @@ body.logo-wrap .cursor3.hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 300px;
+  height: 250px;
   width: 200px;
-  background-color: #525252;
   border-radius: 10px;
-  -webkit-box-shadow: -1rem 0 3rem #000;
-          box-shadow: -1rem 0 3rem #000;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
   position: relative;
   left: 0px;
+  background: #363636 !important;
+  -webkit-box-shadow: 21px 21px 37px #1c1c1c, -21px 0px 37px #1c1c1c !important;
+          box-shadow: 21px 21px 37px #1c1c1c, -21px 0px 37px #1c1c1c !important;
 }
 
 .achivementCard:not(:first-child) {
@@ -459,6 +459,10 @@ body.logo-wrap .cursor3.hover {
   color: var(--bg-color);
   font-family: 'rz-regular';
   font-size: medium;
+}
+
+.icons {
+  margin-top: 100px;
 }
 
 .timeline_area {
@@ -608,7 +612,7 @@ section:not(#projects, #intro) {
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
-  padding: 50px 10vw;
+  padding: 50px 8vw;
   margin: auto;
 }
 
