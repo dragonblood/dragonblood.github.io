@@ -27,7 +27,9 @@
     window.dialogArguments = args;
 
 
-    var obj = JSON.parse(args.result.dom.all[2].innerHTML)
+    var temp = args.result.dom.all[2].innerHTML;
+    alert(temp);
+    var obj = JSON.parse();
     
     new gridjs.Grid({
 
@@ -103,3 +105,4 @@
     
     </script>
     </html>
+    '[{"total_exp":"12","first_name":"k"},{"total_exp":"435","first_name":"K"},{"total_exp":"10","first_name":"K"},]';
