@@ -3,6 +3,44 @@
     <head>
         <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
         <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+        <style>
+            table {
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 0.9em;
+                font-family: sans-serif;
+                min-width: 400px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            }
+
+            table th tr {
+                background-color: #009879;
+                color: #ffffff;
+                text-align: left;
+            }
+
+            table th,
+            table td {
+                padding: 12px 15px;
+            }
+
+            table tbody tr {
+                border-bottom: 1px solid #dddddd;
+            }
+
+            table tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+
+            table tbody tr:last-of-type {
+                border-bottom: 2px solid #009879;
+            }
+
+            table tbody tr.active-row {
+                font-weight: bold;
+                color: #009879;
+            }
+        </style>
     </head>
     <body>
         <h1>Candidates Data</h1>
@@ -41,15 +79,19 @@
             id: "total_exp",
             name: "Experience"
         }, {
-            id: "total_exp",
-            name: "Experience"
+            id: "candidate_state",
+            name: "Current Stage"
+        }, {
+            id: "work_authorization",
+            name: "Work Authorization"
         }],
 
             data: obj.map(function(person) {
                 return {
                     name: person.first_name,
                     total_exp: person.total_exp,
-                    state: person.state
+                    candidate_state: person.candidate_state,
+                    work_authorization: person.work_authorization
                 };
             }),
 
