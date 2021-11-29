@@ -40,9 +40,6 @@
             id: "total_exp",
             name: "Experience"
         }, {
-            id: "candidate_state",
-            name: "Current Stage"
-        }, {
             id: "work_authorization",
             name: "Work Authorization"
         }],
@@ -51,7 +48,6 @@
                 return {
                     name: person.first_name,
                     total_exp: person.total_exp,
-                    candidate_state: "0",
                     work_authorization: person.work_authorization,
                 };
             }),
