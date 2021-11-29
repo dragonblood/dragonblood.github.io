@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
-            <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
-        </head>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+    </head>
     <body>
-        <h1>Candidates Data</h1>
-        
-        <div id="wrapper"></div>
-          
+        <h1>Candidates Selected</h1>
+        <div id="wrapper">
+            
+        </div>
     </body>
+
     <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
+
     <script type="module">
         import {
             Grid,
@@ -19,89 +20,40 @@
     </script>
 
     <script>
-
-    // alert();
-
+    
+    //Getting the args from aras
     var args = window.frameElement ? window.frameElement.dialogArguments: window.dialogArguments,
     aras = (args && args.aras) ? args.aras : parent.aras;
     window.dialogArguments = args;
 
+    //fetching the result
+    var result = args.result.dom.all[2].innerHTML;
 
-    var temp = args.result.dom.all[2].innerHTML;
-    var obj = JSON.parse(temp);
-    
-    new gridjs.Grid({
+    //parsing the result to JSON
+    var obj = JSON.parse(result);
 
-        columns: [{
-            id: "name",
-            name: "Name"
-                }, {
-            id: "total_exp",
-            name: "Experience"
-                }],
+    // new gridjs.Grid({
 
-            data: obj.map(function(person) {
-                return {
-                    name: person.first_name,
-                    total_exp: person.total_exp
-                };
-            }),
+    //     columns: [{
+    //         id: "name",
+    //         name: "Name"
+    //     }, {
+    //         id: "total_exp",
+    //         name: "Experience"
+    //     }, {
+    //         id: "total_exp",
+    //         name: "Experience"
+    //     }],
 
-    }).render(document.getElementById("wrapper"));
+    //         data: obj.map(function(person) {
+    //             return {
+    //                 name: person.first_name,
+    //                 total_exp: person.total_exp,
+    //                 state: person.state
+    //             };
+    //         }),
 
-    // // .slice(1, -1);
+    // }).render(document.getElementById("wrapper"));
 
-    // var table = document.createElement('table');
-
-    // // header
-    // var headerRow = table.insertRow(0);
-    // var headerCell = headerRow.insertCell(0);
-    // headerCell.innerHTML = "Name";
-    // headerCell = headerRow.insertCell(1);
-    // headerCell.innerHTML = "Experience";
-
-    // var tr = table.insertRow(-1);
-
-
-    // function iterate(obj,table,tr){
-
-    //     for(var props in obj){
-        
-
-    //         if(obj.hasOwnProperty(props)){
-
-    //             if(typeof obj[props]=='object')
-    //                 {
-    //                     var trNext = table.insertRow(-1);
-    //                     var tabCell = trNext.insertCell(-1);
-    //                     var table_in = document.createElement('table'); 
-    //                     var tr_in;
-
-    //                     tabCell.appendChild(table_in)
-    //                     iterate(obj[props],table_in,tr_in);
-    //                 }
-    //             else
-    //                 {
-    //                     if(tr === undefined)
-    //                     {
-    //                         tr = table.insertRow(-1);
-    //                     }
-    //                     var tabCell = tr.insertCell(-1);
-    //                     console.log(props+' * '+obj[props]);
-    //                     tabCell.innerHTML = obj[props];
-    //                 }
-
-    //         }
-    //     }
-    // }
-
-    // iterate(obj,table,tr);
-
-    // var divContainer = document.getElementById("showData");
-    //         divContainer.innerHTML = "";
-    //         divContainer.appendChild(table);
-
-    
     </script>
-    </html>
-    '[{"total_exp":"12","first_name":"k"},{"total_exp":"435","first_name":"K"},{"total_exp":"10","first_name":"K"},]';
+</html>
