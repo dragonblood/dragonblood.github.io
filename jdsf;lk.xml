@@ -1,0 +1,48 @@
+<Item type="seligent_candidate" typeId="CECC0B58DB024B68AA27AD1D321A911E" id="155AD49A247E422286519BB4AA673195">
+<config_id keyed_name="nmn dhjhsjk" type="seligent_candidate">155AD49A247E422286519BB4AA673195</config_id>
+<created_by_id keyed_name="Innovator Admin" type="User">30B991F927274FA3829655F50C99472E</created_by_id>
+<created_on>2021-11-18T13:47:05</created_on>
+<current_state name="Reject" keyed_name="Reject" type="Life Cycle State">F579698FDFFD4343B8950898E138A994</current_state>
+<generation>1</generation>
+<id keyed_name="nmn dhjhsjk" type="seligent_candidate">155AD49A247E422286519BB4AA673195</id>
+<is_current>1</is_current>
+<is_released>0</is_released>
+<keyed_name>nmn dhjhsjk</keyed_name>
+<major_rev>A</major_rev>
+<modified_by_id keyed_name="Innovator Admin" type="User">30B991F927274FA3829655F50C99472E</modified_by_id>
+<modified_on>2021-11-24T17:50:37</modified_on>
+<new_version>1</new_version>
+<not_lockable>0</not_lockable>
+<permission_id keyed_name="Administrators" type="Permission" rigPermission="5BE54C871FB14F6EBC11596D1A010D26">
+5BE54C871FB14F6EBC11596D1A010D26</permission_id>
+<seligent_adhar_no>4457878</seligent_adhar_no>
+<seligent_candidate>Seli12</seligent_candidate>
+<seligent_country>India</seligent_country>
+<seligent_date_of_birth>2021-11-02T00:00:00</seligent_date_of_birth>
+<seligent_middle_name>hjdhjckf</seligent_middle_name>
+<seligent_pan_no>dhfkjsh</seligent_pan_no><seligent_present_address>shjdhja</seligent_present_address><seligent_state>Maharashtra</seligent_state><seligent_title>Ms.</seligent_title><state>Reject</state><seligent_first_name>nmn</seligent_first_name><seligent_last_name>dhjhsjk</seligent_last_name><itemtype>CECC0B58DB024B68AA27AD1D321A911E</itemtype>
+</Item>
+
+<Item type="seligent_candidate" typeId="CECC0B58DB024B68AA27AD1D321A911E" id="1F69B033D52C497C882308EC5A50003E">
+<config_id keyed_name="Harry Potter" type="seligent_candidate">1F69B033D52C497C882308EC5A50003E</config_id>
+<created_by_id keyed_name="Innovator Admin" type="User">30B991F927274FA3829655F50C99472E</created_by_id>
+<created_on>2021-11-22T10:52:43</created_on>
+<current_state name="Reject" keyed_name="Reject" type="Life Cycle State">F579698FDFFD4343B8950898E138A994</current_state>
+<generation>1</generation>
+<id keyed_name="Harry Potter" type="seligent_candidate">1F69B033D52C497C882308EC5A50003E</id>
+<is_current>1</is_current>
+<is_released>0</is_released>
+<keyed_name>Harry Potter</keyed_name>
+<major_rev>A</major_rev>
+<modified_by_id keyed_name="Innovator Admin" type="User">30B991F927274FA3829655F50C99472E</modified_by_id>
+<modified_on>2021-11-25T12:56:23</modified_on>
+<new_version>1</new_version>
+<not_lockable>0</not_lockable>
+<permission_id keyed_name="Administrators" type="Permission" origPermission="5BE54C871FB14F6EBC11596D1A010D26">5BE54C871FB14F6EBC11596D1A010D26</permission_id>
+<seligent_adhar_no>2136542365123</seligent_adhar_no>
+<seligent_candidate>Seli31</seligent_candidate>
+<seligent_country>India</seligent_country>
+<seligent_date_of_birth>T00:00:002021-11-23</seligent_date_of_birth>
+<seligent_middle_name>chjhcja</seligent_middle_name>
+<seligent_pan_no>fnnvslk</seligent_pan_no><seligent_permanent_address>djvkj</seligent_permanent_address><seligent_present_address>dksjvalkj</seligent_present_address><seligent_state>Maharashtra</seligent_state><seligent_title>Mr.</seligent_title><state>Reject</state><seligent_first_name>Harry</seligent_first_name><seligent_last_name>Potter</seligent_last_name><itemtype>CECC0B58DB024B68AA27AD1D321A911E</itemtype>
+</Item>
