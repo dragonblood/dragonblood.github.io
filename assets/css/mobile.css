@@ -1,4 +1,4 @@
-@import url(/home/vipul/Documents/WEB/My website/main/assets/style/neumorphism.css);
+@import url(/home/vipul/Documents/WEB/My website/main/assets/css/neumorphism.css);
 @font-face {
   font-family: "rz-bold";
   src: url("https://d33wubrfki0l68.cloudfront.net/f3186e7f4b56c63f574671af3000fd4bf8c51332/49de9/fonts/rezozero/rz-bold.eot");
@@ -31,7 +31,6 @@ body {
 }
 
 #intro {
-  background: #8b54e4;
   height: 100vh;
   width: 100%;
 }

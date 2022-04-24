@@ -101,6 +101,7 @@ body {
   background-image: url('https://assets.codepen.io/1462889/back-page.svg');
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 
@@ -129,6 +130,7 @@ body {
 
 .about_me_text_para{
   text-align: justify;
+  padding: 20px 20px 0 0;
 }
 
 .myphotos{

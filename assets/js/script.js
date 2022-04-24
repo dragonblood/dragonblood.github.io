@@ -157,7 +157,7 @@ gsap.set(".shape", {
 
 //////////////////////////////// MOUSE
 
-document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+window.addEventListener("mousemove", function(n) {
 t.style.left = n.clientX + "px", 
 t.style.top = n.clientY + 1000 + "px", 
 e.style.left = n.clientX + "px", 
@@ -181,17 +181,17 @@ for (var r = document.querySelectorAll(".hover-target, .hover-target-2"), a = r.
 function o(t) {
     t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
 }
-document.addEventListener('DOMContentLoaded', function () {
-  var hoverLink = document.querySelector('.logo');
-  var bodychange = document.querySelector('body');
+// document.addEventListener('DOMContentLoaded', function () {
+//   var hoverLink = document.querySelector('.logo');
+//   var bodychange = document.querySelector('body');
 
-  hoverLink.addEventListener('mouseenter', function (e) {
-      bodychange.classList.add('logo-wrap');
-  });
-  hoverLink.addEventListener('mouseleave', function () {
-      bodychange.classList.remove('logo-wrap');
-  })
-})
+//   hoverLink.addEventListener('mouseenter', function (e) {
+//       bodychange.classList.add('logo-wrap');
+//   });
+//   hoverLink.addEventListener('mouseleave', function () {
+//       bodychange.classList.remove('logo-wrap');
+//   })
+// })
 document.addEventListener('DOMContentLoaded', function () {
   var hoverLink = document.querySelector('.img-1');
   var bodychange = document.querySelector('body');
