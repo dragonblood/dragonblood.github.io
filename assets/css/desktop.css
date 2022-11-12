@@ -779,6 +779,7 @@ section:not(#projects, #intro) {
 
 /* ###################################################||CONTACT||############################################################ */
 #contact {
+  overflow-x: hidden;
   background: var(--text-color);
   color: #D5D9CC;
 }
