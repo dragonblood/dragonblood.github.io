@@ -625,8 +625,15 @@ section:not(#projects, #intro) {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  min-height: 800px;
-  min-width: 400px;
+
+  
+
+  min-height:30vw;
+  max-height:44vw;
+
+  /* min-width: 400px;
+  max-width: 400px; */
+
   border-radius: 40px;
   background: #e0e0e0;
   -webkit-box-shadow: 16px 16px 23px #b5b5b5, -16px -16px 23px #ffffff;
@@ -648,7 +655,7 @@ section:not(#projects, #intro) {
 }
 
 .projectHeader {
-  font-size: 4rem;
+  font-size: 30px;
   line-height: 1;
   font-weight: 400;
   margin: 1rem;
@@ -703,9 +710,9 @@ section:not(#projects, #intro) {
   padding: 50px 10vw;
 }
 
-.project-wrap > * {
+/* .project-wrap > * {
   min-width: 30vw;
-}
+} */
 
 .multi-button {
   display: -webkit-box;
