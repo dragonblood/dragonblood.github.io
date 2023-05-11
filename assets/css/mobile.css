@@ -1,5 +1,4 @@
-@import url("./neumorphism.css");
-
+@import "neumorphism.css";
 @font-face {
   font-family: "rz-bold";
   src: url("https://d33wubrfki0l68.cloudfront.net/f3186e7f4b56c63f574671af3000fd4bf8c51332/49de9/fonts/rezozero/rz-bold.eot");
@@ -7,7 +6,6 @@
   font-style: normal;
   font-weight: bold;
 }
-
 @font-face {
   font-family: "rz-regular";
   src: url("https://d33wubrfki0l68.cloudfront.net/a2a2e60773e19d6ee1cf922f7141a7b46d4d19cf/4264c/fonts/rezozero/rz-regular.eot");
@@ -15,7 +13,6 @@
   font-style: normal;
   font-weight: normal;
 }
-
 .desktop {
   display: none;
 }
@@ -24,7 +21,6 @@ body {
   font-family: "rz-regular", sans-serif !important;
   color: #000000;
   background: #e0e0e0;
-  -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
   overflow-x: hidden;
   width: unset;
@@ -194,8 +190,7 @@ ul {
 .subscribe-form button i {
   color: #fff;
   font-size: 22px;
-  -webkit-transform: rotate(-6deg);
-          transform: rotate(-6deg);
+  transform: rotate(-6deg);
 }
 
 .copyright-text p {
@@ -268,10 +263,6 @@ ul {
 }
 
 .second-row-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-/*# sourceMappingURL=mobile.css.map */
+  flex-wrap: wrap;
+}/*# sourceMappingURL=mobile.css.map */
