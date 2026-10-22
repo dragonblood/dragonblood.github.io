@@ -33,3 +33,20 @@ if ('IntersectionObserver' in window) {
 } else {
   revealItems.forEach((item) => item.classList.add('is-visible'));
 }
+
+// Count-up for the diagram's throughput figure
+const pfCount = document.querySelector('#pf-count');
+if (pfCount && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const target = 65000, duration = 1800, startDelay = 1000;
+  pfCount.textContent = '0';
+  setTimeout(() => {
+    const t0 = performance.now();
+    const tick = (now) => {
+      const p = Math.min((now - t0) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      pfCount.textContent = Math.round(target * eased).toLocaleString('en-US') + (p === 1 ? '+' : '');
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }, startDelay);
+}

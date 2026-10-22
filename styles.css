@@ -30,3 +30,40 @@
 @media(max-width:850px){.client-work-grid{gap:8px}.client-work-grid article{padding:15px 13px;min-height:160px}}
 @media(max-width:640px){.experience{padding-bottom:34px}.skills-band{margin-top:30px;padding-bottom:22px}.experience-row.seligent-row{margin-top:0}.client-work-grid{grid-template-columns:1fr;gap:8px;margin-top:12px}.client-work-grid article{min-height:0;padding:16px}.about{padding-top:49px}}
 @media(prefers-reduced-motion:reduce){.flow-packet{display:none}.cloud-node,.service-node{animation:none!important}.diagram-lines .line-dash{animation:none!important}}
+
+/* ===== AWS hero diagram (animated pipeline) ===== */
+.hero-visual{height:auto;padding-bottom:18px}
+.hero-visual .visual-footer{position:static;margin-top:12px}
+.live-label i{animation:pf-pulse 1.8s ease-out infinite}
+.pf-wrap{position:relative;z-index:1}
+.pf{display:block;width:100%;height:auto;margin-top:10px;overflow:visible}
+.pf text{font-family:var(--sans)}
+.pf-line{fill:none;stroke:#d3d2c6;stroke-width:1.2}
+.pf-dash{fill:none;stroke:#84917f;stroke-width:1.2;stroke-dasharray:4 7;animation:flow 9s linear infinite}
+.pf-chev{fill:none;stroke:#8a9885;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.pf-card,.pf-panel{fill:#fffefa;stroke:#dcdacd;stroke-width:1}
+.pf-panel{fill:#f7f6f0}
+.pf-src{fill:#e5e9df;stroke:#c9d1c2}
+.pf-st{font-size:9px;font-weight:700;fill:#55654f;letter-spacing:.06em}
+.pf-ico{fill:none;stroke:#667a62;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.pf-t{font-size:9.5px;font-weight:700;fill:#2f352b}
+.pf-s{font-size:7.2px;fill:#8d8e84}
+.pf-lbl{font-size:6.8px;font-weight:700;letter-spacing:.14em;fill:#8d8e84}
+.pf-big{font:600 24px var(--display);letter-spacing:-.04em;fill:#2f352b}
+.pf-pt{font-size:8.5px;font-weight:600;fill:#4d5748}
+.pf-glow{fill:#7d917912;stroke:#7d9179;stroke-width:1.4;opacity:0;filter:drop-shadow(0 0 6px #7d917980);animation:pf-glow 3s ease-in-out var(--d) infinite}
+.pf-pk circle{fill:#6f8a6a}.pf-pk .pf-halo{opacity:.2}
+.pf-pk.pk-b circle{fill:#b08f5e}
+.pf-cpu{fill:#9fb199;animation:pf-cpu 1s ease-in-out var(--c) infinite}
+.pf-bar{fill:#8ea089;transform-box:fill-box;transform-origin:50% 100%;animation:pf-grow .8s cubic-bezier(.2,.65,.25,1) calc(.9s + var(--i)*.05s) both,pf-bar 3.2s ease-in-out calc(1.9s + var(--i)*.12s) infinite alternate}
+.pf-bar:nth-of-type(n+9){fill:#b9a37a}
+.pf-pill{fill:#fffefa;stroke:#d6d5c9;animation:pf-pill 6s ease-in-out var(--d) infinite}
+.pf-node{animation:pf-in .7s cubic-bezier(.2,.65,.25,1) calc(var(--i)*.12s + .2s) both}
+@keyframes pf-in{from{opacity:0;translate:0 8px}to{opacity:1;translate:0 0}}
+@keyframes pf-glow{0%,100%{opacity:0}25%{opacity:1}55%{opacity:0}}
+@keyframes pf-grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes pf-bar{from{transform:scaleY(.62)}to{transform:scaleY(1)}}
+@keyframes pf-cpu{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes pf-pill{0%,40%,100%{fill:#fffefa;stroke:#d6d5c9}10%,28%{fill:#e1e8dc;stroke:#7d9179}}
+@keyframes pf-pulse{0%{box-shadow:0 0 0 0 #80967a99}100%{box-shadow:0 0 0 7px #80967a00}}
+@media(prefers-reduced-motion:reduce){.pf-pk{display:none}.pf *,.live-label i{animation:none!important}.pf-glow{opacity:0}}

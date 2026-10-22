@@ -31,23 +31,46 @@
           <div class="hero-note"><span class="note-line"></span><span>Open to cloud engineering and technical leadership roles</span></div>
         </div>
 
-        <div class="hero-visual reveal" aria-label="Illustration of an efficient cloud architecture">
+        <div class="hero-visual reveal" aria-label="Animated AWS architecture for drawing generation">
           <div class="visual-topline"><span>AWS DRAWING PLATFORM</span><span class="live-label"><i></i> IN PRODUCTION</span></div>
-          <div class="diagram">
-            <svg class="diagram-lines" viewBox="0 0 520 390" preserveAspectRatio="none" aria-hidden="true">
-              <path d="M260 92V140M260 140H115V185M260 140H405V185M115 235V282H260V308M405 235V282H260" />
-              <path class="line-dash" d="M260 92V140M260 140H115V185M260 140H405V185M115 235V282H260V308M405 235V282H260" />
-              <circle class="flow-packet" r="3"><animateMotion dur="4.8s" repeatCount="indefinite" path="M260 92V140H115V185" /></circle>
-              <circle class="flow-packet packet-two" r="3"><animateMotion dur="5.5s" begin="-2.4s" repeatCount="indefinite" path="M260 92V140H405V185" /></circle>
-              <circle class="flow-packet packet-three" r="2.5"><animateMotion dur="4.2s" begin="-1.7s" repeatCount="indefinite" path="M405 235V282H260V308" /></circle>
-            </svg>
-            <div class="cloud-node"><span class="cloud-icon">☁</span><span>AWS platform</span><small>shared event-driven workflow</small></div>
-            <div class="service-node service-one"><span class="node-icon icon-edge">↗</span><span>File intake</span><small>S3 · validation</small></div>
-            <div class="service-node service-two"><span class="node-icon icon-compute">▦</span><span>Job orchestration</span><small>queues · serverless</small></div>
-            <div class="service-node service-three"><span class="node-icon icon-data">◌</span><span>Revit workers</span><small>health-aware EC2</small></div>
-            <div class="diagram-caption"><span>THREE LEGACY TOOLS · ONE SHARED PLATFORM</span><span class="caption-badge">65k+ drawings / month</span></div>
-          </div>
-          <div class="visual-footer"><span>AWS · EVENT-DRIVEN · AUTOMATED</span><span>KONE / BIM + FLCAD</span></div>
+          <div class="pf-wrap">
+<svg class="pf" viewBox="0 0 520 304" role="img" aria-label="Diagram: BIM and FLCAD requests flow through file intake, orchestration and Revit workers to delivery on AWS, with monthly throughput and a Dev, QA, Prod release pipeline.">
+<path class="pf-line" d="M66 84C86 84 82 135 100 135H500"/><path class="pf-line" d="M66 186C86 186 82 135 100 135H500"/>
+<path class="pf-dash" d="M66 84C86 84 82 135 100 135H500"/><path class="pf-dash" d="M66 186C86 186 82 135 100 135H500"/>
+<g class="pf-pk pk-a"><animateMotion dur="6s" begin="0s" repeatCount="indefinite" path="M66 84C86 84 82 135 100 135H500"/><circle r="8" class="pf-halo"/><circle r="3.2"/></g><g class="pf-pk pk-b"><animateMotion dur="6s" begin="0.6s" repeatCount="indefinite" path="M66 186C86 186 82 135 100 135H500"/><circle r="8" class="pf-halo"/><circle r="3.2"/></g><g class="pf-pk pk-a"><animateMotion dur="6s" begin="-3s" repeatCount="indefinite" path="M66 84C86 84 82 135 100 135H500"/><circle r="8" class="pf-halo"/><circle r="3.2"/></g><g class="pf-pk pk-b"><animateMotion dur="6s" begin="-2.4s" repeatCount="indefinite" path="M66 186C86 186 82 135 100 135H500"/><circle r="8" class="pf-halo"/><circle r="3.2"/></g>
+<g class="pf-node" style="--i:0"><rect class="pf-src" x="8" y="70" width="58" height="28" rx="14"/><text class="pf-st" x="37" y="88" text-anchor="middle">BIM</text></g>
+<g class="pf-node" style="--i:1"><rect class="pf-src" x="8" y="172" width="58" height="28" rx="14"/><text class="pf-st" x="37" y="190" text-anchor="middle">FLCAD</text></g>
+<path class="pf-chev" d="M193 131l4 4-4 4"/><path class="pf-chev" d="M297 131l4 4-4 4"/><path class="pf-chev" d="M401 131l4 4-4 4"/>
+<g class="pf-node" style="--i:2">
+<rect class="pf-glow" style="--d:0.55s" x="98" y="96" width="86" height="78" rx="7"/>
+<rect class="pf-card" x="100" y="98" width="82" height="74" rx="5"/>
+<g transform="translate(110 108)" class="pf-ico"><path d="M2 5 a5 2 0 0 1 10 0 a5 2 0 0 1 -10 0 M2 5 L3.4 13 Q7 15.2 10.6 13 L12 5"/></g>
+<text class="pf-t" x="110" y="144">File intake</text><text class="pf-s" x="110" y="157">S3 · validate</text></g>
+<g class="pf-node" style="--i:3">
+<rect class="pf-glow" style="--d:1.92s" x="202" y="96" width="86" height="78" rx="7"/>
+<rect class="pf-card" x="204" y="98" width="82" height="74" rx="5"/>
+<g transform="translate(214 108)" class="pf-ico"><path d="M1 3h12v2.6H1zM1 6.7h12v2.6H1zM1 10.4h12V13H1z"/></g>
+<text class="pf-t" x="214" y="144">Orchestrate</text><text class="pf-s" x="214" y="157">SQS · Lambda</text></g>
+<g class="pf-node" style="--i:4">
+<rect class="pf-glow" style="--d:0.28s" x="306" y="96" width="86" height="78" rx="7"/>
+<rect class="pf-card" x="308" y="98" width="82" height="74" rx="5"/>
+<g transform="translate(318 108)" class="pf-ico"><path d="M3 3h8v8H3zM5.5 5.5h3v3h-3zM5 1v2M9 1v2M5 11v2M9 11v2M1 5h2M1 9h2M11 5h2M11 9h2"/></g><circle class="pf-cpu" style="--c:0.0s" cx="366" cy="112" r="2"/><circle class="pf-cpu" style="--c:0.33s" cx="373" cy="112" r="2"/><circle class="pf-cpu" style="--c:0.66s" cx="380" cy="112" r="2"/>
+<text class="pf-t" x="318" y="144">Revit workers</text><text class="pf-s" x="318" y="157">EC2 · health-aware</text></g>
+<g class="pf-node" style="--i:5">
+<rect class="pf-glow" style="--d:1.65s" x="410" y="96" width="86" height="78" rx="7"/>
+<rect class="pf-card" x="412" y="98" width="82" height="74" rx="5"/>
+<g transform="translate(422 108)" class="pf-ico"><path d="M7 1v8M3.6 5.8L7 9.2l3.4-3.4M1.5 10.5v2h11v-2"/></g>
+<text class="pf-t" x="422" y="144">Delivery</text><text class="pf-s" x="422" y="157">S3 · notify</text></g>
+
+<g class="pf-node" style="--i:6"><rect class="pf-panel" x="8" y="222" width="246" height="76" rx="5"/>
+<text class="pf-lbl" x="20" y="241">DRAWINGS PER MONTH</text>
+<text class="pf-big" id="pf-count" x="20" y="274">65,000+</text><rect class="pf-bar" style="--i:0" x="132.0" y="274" width="6" height="14" rx="1.5"/><rect class="pf-bar" style="--i:1" x="141.5" y="266" width="6" height="22" rx="1.5"/><rect class="pf-bar" style="--i:2" x="151.0" y="270" width="6" height="18" rx="1.5"/><rect class="pf-bar" style="--i:3" x="160.5" y="260" width="6" height="28" rx="1.5"/><rect class="pf-bar" style="--i:4" x="170.0" y="264" width="6" height="24" rx="1.5"/><rect class="pf-bar" style="--i:5" x="179.5" y="254" width="6" height="34" rx="1.5"/><rect class="pf-bar" style="--i:6" x="189.0" y="258" width="6" height="30" rx="1.5"/><rect class="pf-bar" style="--i:7" x="198.5" y="250" width="6" height="38" rx="1.5"/><rect class="pf-bar" style="--i:8" x="208.0" y="256" width="6" height="32" rx="1.5"/><rect class="pf-bar" style="--i:9" x="217.5" y="246" width="6" height="42" rx="1.5"/><rect class="pf-bar" style="--i:10" x="227.0" y="252" width="6" height="36" rx="1.5"/><rect class="pf-bar" style="--i:11" x="236.5" y="244" width="6" height="44" rx="1.5"/></g>
+<g class="pf-node" style="--i:7"><rect class="pf-panel" x="266" y="222" width="246" height="76" rx="5"/>
+<text class="pf-lbl" x="278" y="241">RELEASE PIPELINE</text>
+<path class="pf-dash" d="M340 266H360M422 266H442"/><g><rect class="pf-pill" style="--d:0s" x="278" y="254" width="62" height="24" rx="12"/><text class="pf-pt" x="309" y="269" text-anchor="middle">Dev</text></g><g><rect class="pf-pill" style="--d:2s" x="360" y="254" width="62" height="24" rx="12"/><text class="pf-pt" x="391" y="269" text-anchor="middle">QA</text></g><g><rect class="pf-pill" style="--d:4s" x="442" y="254" width="62" height="24" rx="12"/><text class="pf-pt" x="473" y="269" text-anchor="middle">Prod</text></g>
+<text class="pf-s" x="278" y="291">CloudFormation · GitHub Actions</text></g>
+</svg></div>
+<div class="visual-footer"><span>AWS · EVENT-DRIVEN · AUTOMATED</span><span>KONE / BIM + FLCAD</span></div>
           <div class="visual-orb orb-one"></div><div class="visual-orb orb-two"></div>
         </div>
         <div class="hero-index">01 <span></span> 03</div>
