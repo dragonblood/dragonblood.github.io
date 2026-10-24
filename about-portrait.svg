@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" shape-rendering="crispEdges" role="img" aria-labelledby="title desc">
+  <title id="title">Coffee break with a dog</title>
+  <desc id="desc">A soft, muted pixel-art illustration of a person holding coffee beside a small dog.</desc>
+  <rect width="160" height="160" fill="#f6f4ed"/>
+  <path d="M16 118h128v5H16z" fill="#e7e4da"/>
+  <path d="M26 38h20v5H26zM31 33h10v5H31zM131 28h5v20h-5zM126 33h5v10h-5z" fill="#e9e6dc"/>
+  <!-- person -->
+  <path d="M59 46h27v5H59zM54 51h37v5H54zM51 56h42v21H51z" fill="#443f37"/>
+  <path d="M56 61h32v21H56z" fill="#d9ad8c"/>
+  <path d="M56 57h10v5H56zM82 57h7v5h-7zM62 72h5v5h-5zM78 72h5v5h-5z" fill="#443f37"/>
+  <path d="M70 78h6v3h-6z" fill="#c99475"/>
+  <path d="M48 87h47v30H48zM53 82h37v10H53z" fill="#8d9984"/>
+  <path d="M43 91h10v21H43zM90 91h10v17H90z" fill="#8d9984"/>
+  <path d="M58 115h15v5H58zM77 115h15v5H77z" fill="#57534a"/>
+  <!-- coffee cup held in one hand -->
+  <path d="M96 92h18v16H96z" fill="#f4f0e7"/>
+  <path d="M114 96h7v8h-7zM98 89h14v4H98z" fill="#d7c3a2"/>
+  <path d="M101 96h8v7h-8z" fill="#9a7757"/>
+  <path d="M92 91h7v7h-7zM96 98h5v10h-5z" fill="#d9ad8c"/>
+  <path d="M101 84h4v5h-4zM108 80h4v7h-4z" fill="#c9c5b7"/>
+  <!-- small companion dog -->
+  <path d="M111 103h24v5h-24zM106 108h33v16h-33z" fill="#c6ad89"/>
+  <path d="M108 104h7v10h-7zM128 104h7v10h-7z" fill="#b08e6c"/>
+  <path d="M137 111h7v7h-7zM110 121h5v7h-5zM130 121h5v7h-5z" fill="#a98a6b"/>
+  <path d="M113 112h4v4h-4zM128 112h4v4h-4z" fill="#514b40"/>
+  <path d="M119 118h7v4h-7z" fill="#f0e5d5"/>
+  <path d="M105 108h5v9h-5zM136 107h5v10h-5z" fill="#c6ad89"/>
+  <path d="M102 111h4v5h-4z" fill="#a98a6b"/>
+  <!-- tiny ground details -->
+  <path d="M25 128h15v3H25zM44 133h9v3h-9zM89 130h10v3H89zM139 132h8v3h-8z" fill="#dedacf"/>
+</svg>

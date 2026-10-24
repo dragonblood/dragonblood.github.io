@@ -3,12 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f8f7f3" />
+    <meta name="theme-color" content="#f6f4ed" />
     <meta name="description" content="Vipul Petkar is a cloud and platform engineer, tech lead, and AWS architect with 4+ years building enterprise systems." />
     <title>Vipul Petkar — Cloud Engineer &amp; Tech Lead</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -16,77 +13,38 @@
       <a class="brand" href="#top" aria-label="Vipul Petkar home">Vipul Petkar</a>
       <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="#work">Selected work</a><a href="#experience">Experience</a><a href="#about">About</a>
-        <a class="nav-contact" href="mailto:Petkar.vipul@gmail.com">Contact me <span aria-hidden="true">↗</span></a>
+        <a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a>
+        <a class="nav-contact" href="mailto:Petkar.vipul@gmail.com">Contact <span aria-hidden="true">↗︎</span></a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero section-wrap">
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span class="status-dot"></span> Cloud engineer · Tech lead <span class="eyebrow-rule"></span> Sweden</div>
-          <h1>I build cloud<br /><em>that delivers.</em></h1>
-          <p class="hero-intro">I’m Vipul, a hands-on tech lead and cloud engineer with 4+ years building AWS platforms, enterprise integrations, and automation for real-world engineering teams.</p>
-          <div class="hero-actions"><a class="button button-dark" href="mailto:Petkar.vipul@gmail.com">Contact me <span>↗</span></a><a class="text-link" href="#work">See my work <span>↓</span></a></div>
-          <div class="hero-note"><span class="note-line"></span><span>Open to cloud engineering and technical leadership roles</span></div>
+    <main>
+      <section class="hero hero-landing" id="top">
+        <canvas class="hero-canvas" aria-hidden="true"></canvas>
+        <div class="hero-grain" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <div class="eyebrow">Cloud · Systems · Architecture</div>
+          <h1>From<br />disorder<br /><em>to structure.</em></h1>
+          <span class="hero-accent" aria-hidden="true"></span>
+          <p class="hero-intro">Simplifying complexity<br />into scalable systems.</p>
+          <div class="hero-actions"><a class="text-link" href="#work">Explore selected work <span>↓︎</span></a></div>
+          <div class="hero-note"><span class="note-line"></span><span>Cloud engineer · Tech lead · Sweden</span></div>
         </div>
-
-        <div class="hero-visual reveal" aria-label="Animated AWS architecture for drawing generation">
-          <div class="visual-topline"><span>AWS DRAWING PLATFORM</span><span class="live-label"><i></i> IN PRODUCTION</span></div>
-          <div class="pf-wrap">
-<svg class="pf" viewBox="0 0 520 304" role="img" aria-label="Diagram: BIM and FLCAD requests flow through file intake, orchestration and Revit workers to delivery on AWS, with monthly throughput and a Dev, QA, Prod release pipeline.">
-<path class="pf-line" d="M66 84C86 84 82 135 100 135H500"/><path class="pf-line" d="M66 186C86 186 82 135 100 135H500"/>
-<path class="pf-dash" d="M66 84C86 84 82 135 100 135H500"/><path class="pf-dash" d="M66 186C86 186 82 135 100 135H500"/>
-<g class="pf-pk pk-a"><animateMotion dur="6s" begin="0s" repeatCount="indefinite" path="M66 84C86 84 82 135 100 135H500"/><circle r="8" class="pf-halo"/><circle r="3.2"/></g><g class="pf-pk pk-b"><animateMotion dur="6s" begin="0.6s" repeatCount="indefinite" path="M66 186C86 186 82 135 100 135H500"/><circle r="8" class="pf-halo"/><circle r="3.2"/></g><g class="pf-pk pk-a"><animateMotion dur="6s" begin="-3s" repeatCount="indefinite" path="M66 84C86 84 82 135 100 135H500"/><circle r="8" class="pf-halo"/><circle r="3.2"/></g><g class="pf-pk pk-b"><animateMotion dur="6s" begin="-2.4s" repeatCount="indefinite" path="M66 186C86 186 82 135 100 135H500"/><circle r="8" class="pf-halo"/><circle r="3.2"/></g>
-<g class="pf-node" style="--i:0"><rect class="pf-src" x="8" y="70" width="58" height="28" rx="14"/><text class="pf-st" x="37" y="88" text-anchor="middle">BIM</text></g>
-<g class="pf-node" style="--i:1"><rect class="pf-src" x="8" y="172" width="58" height="28" rx="14"/><text class="pf-st" x="37" y="190" text-anchor="middle">FLCAD</text></g>
-<path class="pf-chev" d="M193 131l4 4-4 4"/><path class="pf-chev" d="M297 131l4 4-4 4"/><path class="pf-chev" d="M401 131l4 4-4 4"/>
-<g class="pf-node" style="--i:2">
-<rect class="pf-glow" style="--d:0.55s" x="98" y="96" width="86" height="78" rx="7"/>
-<rect class="pf-card" x="100" y="98" width="82" height="74" rx="5"/>
-<g transform="translate(110 108)" class="pf-ico"><path d="M2 5 a5 2 0 0 1 10 0 a5 2 0 0 1 -10 0 M2 5 L3.4 13 Q7 15.2 10.6 13 L12 5"/></g>
-<text class="pf-t" x="110" y="144">File intake</text><text class="pf-s" x="110" y="157">S3 · validate</text></g>
-<g class="pf-node" style="--i:3">
-<rect class="pf-glow" style="--d:1.92s" x="202" y="96" width="86" height="78" rx="7"/>
-<rect class="pf-card" x="204" y="98" width="82" height="74" rx="5"/>
-<g transform="translate(214 108)" class="pf-ico"><path d="M1 3h12v2.6H1zM1 6.7h12v2.6H1zM1 10.4h12V13H1z"/></g>
-<text class="pf-t" x="214" y="144">Orchestrate</text><text class="pf-s" x="214" y="157">SQS · Lambda</text></g>
-<g class="pf-node" style="--i:4">
-<rect class="pf-glow" style="--d:0.28s" x="306" y="96" width="86" height="78" rx="7"/>
-<rect class="pf-card" x="308" y="98" width="82" height="74" rx="5"/>
-<g transform="translate(318 108)" class="pf-ico"><path d="M3 3h8v8H3zM5.5 5.5h3v3h-3zM5 1v2M9 1v2M5 11v2M9 11v2M1 5h2M1 9h2M11 5h2M11 9h2"/></g><circle class="pf-cpu" style="--c:0.0s" cx="366" cy="112" r="2"/><circle class="pf-cpu" style="--c:0.33s" cx="373" cy="112" r="2"/><circle class="pf-cpu" style="--c:0.66s" cx="380" cy="112" r="2"/>
-<text class="pf-t" x="318" y="144">Revit workers</text><text class="pf-s" x="318" y="157">EC2 · health-aware</text></g>
-<g class="pf-node" style="--i:5">
-<rect class="pf-glow" style="--d:1.65s" x="410" y="96" width="86" height="78" rx="7"/>
-<rect class="pf-card" x="412" y="98" width="82" height="74" rx="5"/>
-<g transform="translate(422 108)" class="pf-ico"><path d="M7 1v8M3.6 5.8L7 9.2l3.4-3.4M1.5 10.5v2h11v-2"/></g>
-<text class="pf-t" x="422" y="144">Delivery</text><text class="pf-s" x="422" y="157">S3 · notify</text></g>
-
-<g class="pf-node" style="--i:6"><rect class="pf-panel" x="8" y="222" width="246" height="76" rx="5"/>
-<text class="pf-lbl" x="20" y="241">DRAWINGS PER MONTH</text>
-<text class="pf-big" id="pf-count" x="20" y="274">65,000+</text><rect class="pf-bar" style="--i:0" x="132.0" y="274" width="6" height="14" rx="1.5"/><rect class="pf-bar" style="--i:1" x="141.5" y="266" width="6" height="22" rx="1.5"/><rect class="pf-bar" style="--i:2" x="151.0" y="270" width="6" height="18" rx="1.5"/><rect class="pf-bar" style="--i:3" x="160.5" y="260" width="6" height="28" rx="1.5"/><rect class="pf-bar" style="--i:4" x="170.0" y="264" width="6" height="24" rx="1.5"/><rect class="pf-bar" style="--i:5" x="179.5" y="254" width="6" height="34" rx="1.5"/><rect class="pf-bar" style="--i:6" x="189.0" y="258" width="6" height="30" rx="1.5"/><rect class="pf-bar" style="--i:7" x="198.5" y="250" width="6" height="38" rx="1.5"/><rect class="pf-bar" style="--i:8" x="208.0" y="256" width="6" height="32" rx="1.5"/><rect class="pf-bar" style="--i:9" x="217.5" y="246" width="6" height="42" rx="1.5"/><rect class="pf-bar" style="--i:10" x="227.0" y="252" width="6" height="36" rx="1.5"/><rect class="pf-bar" style="--i:11" x="236.5" y="244" width="6" height="44" rx="1.5"/></g>
-<g class="pf-node" style="--i:7"><rect class="pf-panel" x="266" y="222" width="246" height="76" rx="5"/>
-<text class="pf-lbl" x="278" y="241">RELEASE PIPELINE</text>
-<path class="pf-dash" d="M340 266H360M422 266H442"/><g><rect class="pf-pill" style="--d:0s" x="278" y="254" width="62" height="24" rx="12"/><text class="pf-pt" x="309" y="269" text-anchor="middle">Dev</text></g><g><rect class="pf-pill" style="--d:2s" x="360" y="254" width="62" height="24" rx="12"/><text class="pf-pt" x="391" y="269" text-anchor="middle">QA</text></g><g><rect class="pf-pill" style="--d:4s" x="442" y="254" width="62" height="24" rx="12"/><text class="pf-pt" x="473" y="269" text-anchor="middle">Prod</text></g>
-<text class="pf-s" x="278" y="291">CloudFormation · GitHub Actions</text></g>
-</svg></div>
-<div class="visual-footer"><span>AWS · EVENT-DRIVEN · AUTOMATED</span><span>KONE / BIM + FLCAD</span></div>
-          <div class="visual-orb orb-one"></div><div class="visual-orb orb-two"></div>
-        </div>
+        <div class="hero-labels" aria-hidden="true"><span>PEOPLE</span><span>DATA</span><span>ARCHITECTURE</span><span>COST EFFICIENCY</span></div>
         <div class="hero-index">01 <span></span> 03</div>
       </section>
 
       <section class="proof-strip" aria-label="Career highlights">
-        <div class="proof-inner"><span class="proof-label">CAREER HIGHLIGHTS</span><div><strong>4+ years</strong><span>engineering experience</span></div><div><strong>5+ people</strong><span>technical team leadership</span></div><div><strong>65k+</strong><span>drawings processed monthly</span></div><span class="proof-arrow">↘</span></div>
+        <div class="proof-inner"><span class="proof-label">CAREER HIGHLIGHTS</span><div><strong>4+ years</strong><span>engineering experience</span></div><div><strong>Several large teams</strong><span>technical leadership</span></div><div><strong>70k+</strong><span>2D / 3D drawings processed monthly</span></div><span class="proof-arrow">↘︎</span></div>
       </section>
 
       <section class="work-section" id="work">
         <div class="section-wrap work-wrap">
           <div class="section-heading work-heading reveal"><div><span class="section-kicker">01 — SELECTED WORK</span><h2>Systems built<br /><em>to do real work.</em></h2></div><p>A few examples from cloud platforms, enterprise software, and automation. Details reflect my résumé; project work was delivered as part of client teams.</p></div>
           <div class="work-list">
-            <article class="work-item reveal"><div class="work-index">A / 01</div><div class="work-content"><span class="work-type">KONE · CLOUD PLATFORM · AWS</span><h3>Modernizing drawing<br />generation at scale.</h3><p>Helped replace three legacy VBScript applications with a shared AWS platform for BIM and FLCAD. Designed reusable event-driven stages for ingestion, validation, processing, storage, and delivery, while keeping specialist Revit workloads on EC2.</p><div class="tag-row"><span>Lambda</span><span>Step Functions</span><span>SQS · S3</span><span>CloudFormation</span></div></div><div class="work-result"><div class="result-ring"><strong>65<span>k+</span></strong><small>DRAWINGS / MONTH</small></div><span class="result-caption">shared platform<br />for BIM + FLCAD</span></div></article>
-            <article class="work-item reveal"><div class="work-index">A / 02</div><div class="work-content"><span class="work-type">ALSTOM · ENTERPRISE INTEGRATION</span><h3>Connecting engineering<br />data to ERP.</h3><p>Built Aras PLM integrations that validate approved designs, create engineering change records, extract multi-level BOMs, map product data, and transfer release packages securely over SFTP.</p><div class="tag-row"><span>.NET · C#</span><span>REST APIs</span><span>Aras PLM</span><span>SFTP</span></div></div><div class="work-result result-simple"><span class="result-icon">↗</span><strong>Automated</strong><small>engineering release flow</small></div></article>
-            <article class="work-item reveal"><div class="work-index">A / 03</div><div class="work-content"><span class="work-type">PERSONAL PROJECT · GOOGLE CLOUD</span><h3>AI-powered media<br />localization.</h3><p>Built a Python pipeline that transcribes audio, translates content, and generates synchronized multilingual voiceovers using Google Cloud speech services.</p><div class="tag-row"><span>Python</span><span>Speech-to-text</span><span>Translation</span><span>Text-to-speech</span></div></div><div class="work-result result-simple"><span class="result-icon">✳</span><strong>End to end</strong><small>automated dubbing workflow</small></div></article>
+            <article class="work-item reveal"><div class="work-index">A / 01</div><div class="work-content"><span class="work-type">KONE · CLOUD PLATFORM · AWS</span><h3>Modernizing drawing<br />generation at scale.</h3><p>Helped replace three legacy VBScript applications with a shared AWS platform for BIM and FLCAD. Designed reusable event-driven stages for ingestion, validation, processing, storage, and delivery, while keeping specialist Revit workloads on EC2.</p><div class="tag-row"><span>Lambda</span><span>Step Functions</span><span>SQS · S3</span><span>CloudFormation</span></div></div><div class="work-result result-metric"><div class="result-ring"><strong>70<span>k+</span></strong><small>2D / 3D<br />DRAWINGS / MONTH</small></div></div></article>
+            <article class="work-item reveal"><div class="work-index">A / 02</div><div class="work-content"><span class="work-type">ALSTOM · ENTERPRISE INTEGRATION</span><h3>Connecting engineering<br />data to ERP.</h3><p>Built Aras PLM integrations that validate approved designs, create engineering change records, extract multi-level BOMs, map product data, and transfer release packages securely over SFTP.</p><div class="tag-row"><span>.NET · C#</span><span>REST APIs</span><span>Aras PLM</span><span>SFTP</span></div></div><div class="work-result result-simple"><span class="result-icon">↗︎</span><strong>Automated</strong><small>engineering release flow</small></div></article>
+            <article class="work-item reveal"><div class="work-index">A / 03</div><div class="work-content"><span class="work-type">PERSONAL PROJECT · GOOGLE CLOUD</span><h3>AI-powered media<br />localization.</h3><p>Built a Python pipeline that transcribes audio, translates content, and generates synchronized multilingual voiceovers using Google Cloud speech services.</p><div class="tag-row"><span>Python</span><span>Speech-to-text</span><span>Translation</span><span>Text-to-speech</span></div></div><div class="work-result result-simple"><span class="result-icon">✳︎</span><strong>End to end</strong><small>automated dubbing workflow</small></div></article>
           </div>
           <p class="case-note">Client project details are summarized from my experience; implementation was collaborative and subject to client confidentiality.</p>
         </div>
@@ -95,7 +53,7 @@
       <section class="experience section-wrap" id="experience">
         <div class="section-heading reveal"><div><span class="section-kicker">02 — EXPERIENCE</span><h2>Lead with context.<br /><em>Build hands-on.</em></h2></div><p>I bring technical direction and day-to-day engineering together: helping teams make sound decisions, then contributing to the architecture and implementation.</p></div>
         <div class="skills-band reveal"><span class="section-kicker">TOOLS I WORK WITH</span><div class="skills-list"><span>AWS</span><span>C# / .NET</span><span>Python</span><span>CloudFormation</span><span>GitHub Actions</span><span>Docker</span><span>REST APIs</span><span>SQL</span><span>Azure AD</span><span>Google Cloud</span></div></div>
-        <div class="experience-row seligent-row reveal"><div><span class="experience-dates">NOV 2021 — AUG 2026</span><h3>Seligent Consulting</h3><span class="experience-role">Tech Lead · Full-Stack Developer</span></div><p>Led technical planning and day-to-day coordination for a team of 5+ across BIM and FLCAD while staying hands-on with architecture and development. Delivered AWS modernization, infrastructure automation, secure integrations, and enterprise PLM solutions for global engineering clients.</p><span class="experience-location">REMOTE · INDIA</span></div>
+        <div class="experience-row seligent-row reveal"><div><span class="experience-dates">NOV 2021 — AUG 2026</span><h3>Seligent Consulting</h3><span class="experience-role">Tech Lead · Full-Stack Developer</span></div><p>Led technical planning and day-to-day coordination across several large BIM and FLCAD teams while staying hands-on with architecture and development. Delivered AWS modernization, infrastructure automation, secure integrations, and enterprise PLM solutions for global engineering clients.</p><span class="experience-location">REMOTE · INDIA</span></div>
         <div class="client-work-grid reveal">
           <article><span class="client-label">KONE · CLOUD &amp; DEVOPS</span><p>Unified three legacy drawing tools on AWS, built reusable event-driven processing, improved cost efficiency, and automated Dev, QA, and Production releases with CloudFormation and GitHub Actions.</p></article>
           <article><span class="client-label">DELAVAL · PLM</span><p>Led an Aras Innovator upgrade from v22 to v27, preserving engineering change history, data continuity, and system stability.</p></article>
@@ -104,14 +62,18 @@
       </section>
 
       <section class="about section-wrap" id="about">
-        <div class="about-stamp reveal"><div class="stamp-circle">BUILD<br />WITH<br />PURPOSE <span>✳</span></div><div class="stamp-bottom">ENGINEER · TEAMMATE · LEARNER</div></div>
-        <div class="about-copy reveal"><span class="section-kicker">03 — ABOUT ME</span><h2>Technical depth.<br /><em>Team-first delivery.</em></h2><p>I’m Vipul, a software engineer and tech lead focused on cloud platforms and enterprise systems. I enjoy taking complicated workflows and making them dependable, understandable, and easier for teams to operate.</p><p>I’m currently pursuing an MSc in Computer Science in Sweden. I’ve also been a National Finalist at Smart India Hackathon, placed 7th overall at Microsoft HackNight, and earned Google Cloud and Aras certifications.</p><a class="text-link" href="https://www.linkedin.com/in/vipul-petkar/" target="_blank" rel="noreferrer">Connect on LinkedIn <span>↗</span></a></div>
+        <div class="about-portrait reveal"><img src="about-portrait.svg" alt="Pixel-art illustration of Vipul enjoying coffee with a dog" /></div>
+        <div class="about-copy reveal"><span class="section-kicker">03 — ABOUT ME</span><h2>Technical depth.<br /><em>Team-first delivery.</em></h2><p>Hej, I’m Vipul. I like figuring out how things fit together, especially when a process has become more complicated than it needs to be. Most of my work has been in cloud platforms and engineering software, and I enjoy making systems simpler for the people who rely on them.</p><p>These days I’m in Sweden, working on an MSc in Computer Science. At Seligent, I brought different expertise to projects for KONE, Alstom, Altegra, and DeLaval, spanning cloud platforms, PLM, and engineering software. I was also a national finalist at Smart India Hackathon, placed 7th at Microsoft HackNight, and earned Google Cloud and Aras certifications.</p><p>Outside work, I make content on Instagram at <a class="inline-link" href="https://www.instagram.com/vica.journals/" target="_blank" rel="noreferrer">@vica.journals</a> and love travelling.</p><a class="text-link" href="https://www.linkedin.com/in/vipul-petkar/" target="_blank" rel="noreferrer">Connect on LinkedIn <span>↗︎</span></a></div>
       </section>
 
-      <section class="contact-section"><div class="contact-inner section-wrap reveal"><div><span class="section-kicker">NEXT STEP</span><h2>Let’s build<br /><em>what’s next.</em></h2></div><div class="contact-cta"><p>Hiring for cloud engineering, platform architecture, or technical leadership? I’d be glad to talk.</p><a class="button button-light" href="mailto:Petkar.vipul@gmail.com">Email Vipul <span>↗</span></a><a class="contact-secondary" href="https://www.linkedin.com/in/vipul-petkar/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a><span class="response-note">Sweden</span></div><span class="contact-decoration">↗</span></div></section>
+      <section class="contact-section"><div class="contact-inner section-wrap reveal"><div><span class="section-kicker">NEXT STEP</span><h2>Let’s build<br /><em>what’s next.</em></h2></div><div class="contact-cta"><p>Hiring for cloud engineering, platform architecture, or technical leadership? I’d be glad to talk.</p><a class="button button-light" href="mailto:Petkar.vipul@gmail.com">Email Vipul <span>↗︎</span></a><a class="contact-secondary" href="https://www.linkedin.com/in/vipul-petkar/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗︎</a><span class="response-note">Sweden</span></div><span class="contact-decoration">↗︎</span></div></section>
     </main>
 
-    <footer class="site-footer"><a class="brand footer-brand" href="#top">Vipul Petkar</a><span>Cloud engineer · Tech lead · Sweden</span><div class="footer-links"><a href="mailto:Petkar.vipul@gmail.com">Email ↗</a><a href="https://www.linkedin.com/in/vipul-petkar/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div><small>© <span id="year"></span> Vipul Petkar</small></footer>
+    <footer class="site-footer"><a class="brand footer-brand" href="#top">Vipul Petkar</a><span>Cloud engineer · Tech lead · Sweden</span><div class="footer-links"><a href="mailto:Petkar.vipul@gmail.com">Email ↗︎</a><a href="https://www.linkedin.com/in/vipul-petkar/" target="_blank" rel="noreferrer">LinkedIn ↗︎</a></div><small>© <span id="year"></span> Vipul Petkar</small></footer>
+    <button class="mini-me" type="button" aria-label="Auto scroll to About me">
+      <img src="about-portrait.svg" alt="" />
+      <span>About me</span>
+    </button>
     <script src="script.js"></script>
   </body>
 </html>
